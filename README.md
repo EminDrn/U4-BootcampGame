@@ -36,6 +36,12 @@ Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile 
 ## Product Backlog URL
 
   [Backlog URL / Trello] https://trello.com/invite/b/uvpOdqzu/ATTI23164fdae7aacae94ceead1c7d7b2c8218685D60/u-4-oua-bootcamp
+  
+  
+  ---
+  
+  # Sprint 1
+  **Sprint Notları**:
 
 
  
