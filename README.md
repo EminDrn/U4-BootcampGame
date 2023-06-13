@@ -7,11 +7,11 @@ Oyun ve Uygulama Akademisi Bootcamp Unity U4 grup oyun projesi
 # ÜRÜN İLE İLGİLİ BİLGİLER 
 
 ## Takım Elemanları
-**Aytuğ Bengü:**  Product Owner/ 3D Artist
-**Gülcihan Çelik:**  Scrum Master/Designer
-**Emin Duran:**  Developer
-**Kerim Can Sarısayın:** Developer
-**Fatma Beyza Çepni:** Developer
+- **Aytuğ Bengü:**  Product Owner/ 3D Artist
+- **Gülcihan Çelik:**  Scrum Master/Designer
+- **Emin Duran:**  Developer
+- **Kerim Can Sarısayın:** Developer
+- **Fatma Beyza Çepni:** Developer
 
 
 ## Ürün İsmi
