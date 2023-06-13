@@ -28,10 +28,10 @@ BOSS Savaşları: Zombilerin güçlü liderleriyle büyük ölçekli savaşlara 
 Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile atmosferik bir dünya, zombi kıyametinin gerilim dolu atmosferini oyunculara yansıtacak, unutulmaz bir deneyim sunacak.
 
 ## Hedef Kitle
-Mobil oyuncular
-12+ ve üzeri kullanıcılar
-Zombi Hayranları
-BOSS savaşı severler
+- Mobil oyuncular
+- 12+ ve üzeri kullanıcılar
+- Zombi Hayranları
+- BOSS savaşı severler
 
 ## Product Backlog URL
 
