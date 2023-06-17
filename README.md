@@ -41,7 +41,17 @@ Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile 
   ---
   
   # Sprint 1
-  **Sprint Notları**:
+  - **Sprint Notları**:
+  
+ - **Sprint içinde tamamlanması tahmin edilen puan**: 
+ -  **Puan tamamlama mantığı**:
+ -  **Backlog Düzeni**
+ -  **Daily Scrum**:
+ -  **Sprint board update**: 
+ -  **Ürün Durumu**:
+ -  **Sprint Review**:
+ -  **Sprint Retrospective:**:
+
 
 
  
