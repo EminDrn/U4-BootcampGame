@@ -41,12 +41,19 @@ Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile 
   ---
   
   # Sprint 1
-  - **Sprint Notları**:
+  - **Sprint Notları**: 
+  - Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
+  - file:///C:/Users/ctc/Pictures/Camera%20Roll/Miro%20oua%20Untitled,%20Online%20Whiteboard%20for%20Visual%20Collaboration.html 
+  - içerisine yazılmıştır user storyler backlogların içine geldiğinde detaylar görülür
+  - 
   
- - **Sprint içinde tamamlanması tahmin edilen puan**: 
- -  **Puan tamamlama mantığı**:
+ - **Sprint içinde tamamlanması tahmin edilen puan**:70 puan 
+ -  **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ve ilk sprint'in (altyapı oluşturma) 70 puan ile başlamasının yeterli olacağına karar verildi.
  -  **Backlog Düzeni**
- -  **Daily Scrum**:
+ -  **Daily Scrum**:Daily scrumları daha hızlı ve kolay olduğu için discord'dan yapılmıştır.Toplantı sonuçları ise miro ve trello linki paylaşılmıştır
+ -  ![Ekran görüntüsü 2023-06-19 015958 oua](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/3c86df42-3e2f-4645-ac42-56c20483b4a3)
+
+
  -  **Sprint board update**: 
  -  **Ürün Durumu**:
  -  **Sprint Review**:
