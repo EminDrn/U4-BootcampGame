@@ -43,21 +43,32 @@ Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile 
   # Sprint 1
   - **Sprint Notları**: 
   - Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
-  - file:///C:/Users/ctc/Pictures/Camera%20Roll/Miro%20oua%20Untitled,%20Online%20Whiteboard%20for%20Visual%20Collaboration.html 
+  - file:///C:/Users/ctc/Pictures/Camera%20Roll/U4%20Oyun%20ve%20Uygulama%20Akademisi%20Tak%C4%B1m%C4%B1,%20Online%20Whiteboard%20for%20Visual%20Collaboration.htmll 
   - içerisine yazılmıştır user storyler backlogların içine geldiğinde detaylar görülür
   - 
   
- - **Sprint içinde tamamlanması tahmin edilen puan**:70 puan 
- -  **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ve ilk sprint'in (altyapı oluşturma) 70 puan ile başlamasının yeterli olacağına karar verildi.
- -  **Backlog Düzeni**
- -  **Daily Scrum**:Daily scrumları daha hızlı ve kolay olduğu için discord'dan yapılmıştır.Toplantı sonuçları ise miro ve trello linki paylaşılmıştır
+ - **Sprint içinde tamamlanması tahmin edilen puan**:60 puan 
+ -  **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ve ilk sprint'in (altyapı oluşturma) 60 puan ile başlamasının yeterli olacağına karar verildi.
+ -  
+ -  **Backlog Düzeni**fikrin belirlenmesi,karakterlerin temel düzeyde belirlenmesi, projenin başlatılması ve sprint sonuna görsel bir prototip çıkarma aracıyla düzenlendi.
+ -  **Daily Scrum**:Daily Scrumları daha hızlı ve kolay olduğu için Discord'dan yapılmış ve  Whatsaptan iletişime geçişlmiştir.. Üniversite sınav zamanına denk geldiği için topantılar olabildiğince herkese uygun şekilde ayarlanılmıştır.Toplantı sonuçları ise miro ve trello linki paylaşılmıştır.
  -  ![Ekran görüntüsü 2023-06-19 015958 oua](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/3c86df42-3e2f-4645-ac42-56c20483b4a3)
 
 
- -  **Sprint board update**: 
- -  **Ürün Durumu**:
- -  **Sprint Review**:
- -  **Sprint Retrospective:**:
+ -  **Sprint board update**: Sprint board Ekran görüntüsü:
+ -  ![oua ekran görüntüsü v](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/87bf572a-60c5-45ba-b8a0-54cfaeff5693)
+
+ -  **Ürün Durumu**:![Ekran görüntüsü 2023-06-19 022241](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/fb404778-99a1-45ce-9c9a-442eacfe25b0)
+
+ -  **Sprint Review**:Sprint Review: Alınan kararlar:
+
+Modellerin temelleri oluşturulmuş.
+Karakter modelinin örnekleri üretilmiştir.
+Oyunun hikayesin de ortak karara varılmıştır
+Sprint Review katılımcıları: Bütün ekip sprint review sürecindeki kararlara katılmıştır
+ -  **Sprint Retrospective:**
+Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıitır.Takım üyelerinin gelecek sprintlerde daha aktif olması ve sınavları biten arkadaşların proje üstünde durulması gerektiği kararı alınmıştır.
+
 
 
 
