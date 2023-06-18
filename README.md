@@ -50,7 +50,7 @@ Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile 
  - **Sprint içinde tamamlanması tahmin edilen puan**:60 puan 
  -  **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ve ilk sprint'in (altyapı oluşturma) 60 puan ile başlamasının yeterli olacağına karar verildi.
  -  
- -  **Backlog Düzeni**:fikrin belirlenmesi,karakterlerin temel düzeyde belirlenmesi, projenin başlatılması ve sprint sonuna görsel bir prototip çıkarma aracıyla düzenlendi.
+ -  **Backlog Düzeni**:Fikrin belirlenmesi,karakterlerin temel düzeyde belirlenmesi, projenin başlatılması ve sprint sonuna görsel bir prototip çıkarma aracıyla düzenlendi.
  -  **Daily Scrum**:Daily Scrumları daha hızlı ve kolay olduğu için Discord'dan yapılmış ve  Whatsaptan iletişime geçişlmiştir.. Üniversite sınav zamanına denk geldiği için topantılar olabildiğince herkese uygun şekilde ayarlanılmıştır.Toplantı sonuçları ise miro ve trello linki paylaşılmıştır.
  -  ![Ekran görüntüsü 2023-06-19 015958 oua](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/3c86df42-3e2f-4645-ac42-56c20483b4a3)
 
