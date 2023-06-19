@@ -43,7 +43,7 @@ Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile 
   # Sprint 1
   - **Sprint Notları**: 
   - Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
-  - file:///C:/Users/ctc/Pictures/Camera%20Roll/U4%20Oyun%20ve%20Uygulama%20Akademisi%20Tak%C4%B1m%C4%B1,%20Online%20Whiteboard%20for%20Visual%20Collaboration.htmll 
+  - https://miro.com/welcomeonboard/TXZydEp4S3VhWjRuZFFzcDlFbVlWNnM4cUdlUm9NVWljZHZMMUZoVEx4NjAzdGMzemdWSTZ2YThCOXBmWkxZV3wzNDU4NzY0NTU3Mzg3MjI2MjY0fDI=?share_link_id=170394330610  
   - içerisine yazılmıştır user storyler backlogların içine geldiğinde detaylar görülür
   - 
   
