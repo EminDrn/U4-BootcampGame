@@ -10,7 +10,6 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 _touchUp;
     private Vector3 _touchDown;
     private bool _dragStarted;
-    private bool _isMoving;
     public Animator animator;
 
 
@@ -23,11 +22,11 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(Input.touchCount >0){
             _touch =Input.GetTouch(0);
             if(_touch.phase == TouchPhase.Began){
-                _dragStarted =true;
-                _isMoving =  true;
+                _dragStarted =true;    
                 _touchDown = _touch.position;
                 _touchUp = _touch.position;
                 animator.SetBool("isMoving", true);
@@ -39,10 +38,10 @@ public class CharacterMovement : MonoBehaviour
             }
             if(_touch.phase == TouchPhase.Ended){
                 _touchDown = _touch.position;
-                _isMoving = false;
                 animator.SetBool("isMoving", false);
                 
                 _dragStarted =false;
+                
             }
             gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation , CalculateRotation() , rotationSpeed * Time.deltaTime);
             gameObject.transform.Translate(Vector3.forward * Time.deltaTime*movementSpeed);
