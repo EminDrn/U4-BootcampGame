@@ -69,6 +69,17 @@ Sprint Review katılımcıları: Bütün ekip sprint review sürecindeki kararla
  -  **Sprint Retrospective:**
 Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıitır.Takım üyelerinin gelecek sprintlerde daha aktif olması ve sınavları biten arkadaşların proje üstünde durulması gerektiği kararı alınmıştır.
 
+# Sprint 2
+- **Sprint Notları**:
+- **Sprint içinde tamamlanması tahmin edilen puan**:
+- **Puan tamamlama mantığı**:
+- **Backlog Düzeni**:
+- **Daily Scrum**:
+- **Sprint board update**
+- **Ürün Durumu**:
+- **Sprint Review**:
+- **Sprint Retrospective:**
+
 
 
 
