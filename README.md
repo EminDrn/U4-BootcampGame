@@ -67,12 +67,12 @@ Karakter modelinin örnekleri üretilmiştir.
 Oyunun hikayesin de ortak karara varılmıştır
 Sprint Review katılımcıları: Bütün ekip sprint review sürecindeki kararlara katılmıştır
  -  **Sprint Retrospective:**
-Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıitır.Takım üyelerinin gelecek sprintlerde daha aktif olması ve sınavları biten arkadaşların proje üstünde durulması gerektiği kararı alınmıştır.
+Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım üyelerinin gelecek sprintlerde daha aktif olması ve sınavları biten arkadaşların proje üstünde durulması gerektiği kararı alınmıştır.
 
 # Sprint 2
-- **Sprint Notları**:
-- **Sprint içinde tamamlanması tahmin edilen puan**:
-- **Puan tamamlama mantığı**:
+- **Sprint Notları**:Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
+- **Sprint içinde tamamlanması tahmin edilen puan**:120
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprintin 120 puanla bitirilmesi hedeflendi
 - **Backlog Düzeni**:
 - **Daily Scrum**:
 - **Sprint board update**
