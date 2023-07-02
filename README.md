@@ -83,7 +83,8 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 -![Ekran görüntüsü 2023-07-03 000151 U-4 ](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/f1c36868-b96d-4e70-aba1-8f9efc5a7fe6)
 
 - **Ürün Durumu**:
-- 
+- ![Ekran görüntüsü 2023-07-03 002650 U-4](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/e8980e82-a5f9-49ab-ac24-4904103cc500)
+
 -![U-4 TAKIM-video-to-gif_2](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/230344ac-c3ea-47e3-b5b4-004e7c980f2d)
 
 -![U-4 TAKIM-video-to-gif_1](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/5445b686-38a0-4749-b1a2-916eff1c6499)
@@ -94,12 +95,11 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
  -  3.sprint için oynanabilir bir oyun için görevler üzerinde karar verildi
 -  Game Art ve Kodlama için ayrılan efor ve saatin arttırılması kararı alındı.
 -  Ekip içi iletişimin iyi olmasına rağmen normal hayatta ki yoğunluktan dolayı katılamayanlar için 3. sprintte daha efor kaydetmeleri karar alındı.
-
 -  Sprint Review katılımcıları:
--  Aytuğ Bengü
--  Gülcihan Çelik
--  Emin Duran
--  Fatma Beyza Çepni
+  Aytuğ Bengü
+  Gülcihan Çelik
+  Emin Duran
+  Fatma Beyza Çepni
 - **Sprint Retrospective:**
 
 
