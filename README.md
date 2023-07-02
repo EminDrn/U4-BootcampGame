@@ -91,16 +91,15 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 
 -![U-4 TAKIM-video-to-gif](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/e3ee7b0f-2fcb-4b87-b8e6-279430cf9827)
 - **Sprint Review**:Alınan kararlar:
-,  Daily Scrum'ların Discord kanalı üzerinden toplanıp katılamayanlar için daha önceden bildirip not düşmesi gerektiği karaı alındı
-,  3.sprint için oynanabilir bir oyun için görevler üzerinde karar verildi
-,  Game Art ve Kodlama için ayrılan efor ve saatin arttırılması kararı alındı.
-,  Ekip içi iletişimin iyi olmasına rağmen normal hayatta ki yoğunluktan dolayı katılamayanlar için 3. sprintte daha efor kaydetmeleri karar alındı.
-,  Sprint Review katılımcıları:
-  Aytuğ Bengü
-  Gülcihan Çelik
-  Emin Duran
-  Fatma Beyza Çepni
-- **Sprint Retrospective:**
+  Daily Scrum'ların Discord kanalı üzerinden toplanıp katılamayanlar için daha önceden bildirip not düşmesi gerektiği karaı alındı
+  3.sprint için oynanabilir bir oyun için görevler üzerinde karar verildi
+  Game Art ve Kodlama için ayrılan efor ve saatin arttırılması kararı alındı.
+ Sprint Review katılımcıları:
+  Aytuğ Bengü ,
+  Gülcihan Çelik ,
+  Emin Duran ,
+  Fatma Beyza Çepni ,
+- **Sprint Retrospective:** Bazı sorunlar nedeniyle eksik kalan backloglar için  çözümler üretildi,  Ekip içi iletişimin iyi olmasına rağmen normal hayatta ki yoğunluktan dolayı katılamayanlar için 3. sprintte daha efor kaydetmeleri karar alındı.
 
 
 
