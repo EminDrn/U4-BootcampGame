@@ -80,9 +80,10 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 -  [DAİLY SCRUMLAR U-4.docx](https://github.com/EminDrn/U4-BootcampGame/files/11929500/DAILY.SCRUMLAR.U-4.docx)
 
 - **Sprint board update**:Sprint board Ekran görüntüsü:
-- ![Uploading  trello ekran görüntüsü .png…]()
+- ![trello ekran görüntüsü ](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/0620bc3a-bbe5-4c79-8c07-5cc36fdb2136)
 
 - **Ürün Durumu**:
+- https://cdn.discordapp.com/attachments/1114819998997815372/1125152551386492938/ezgif.com-video-to-gif_2.gif
 - **Sprint Review**:
 - **Sprint Retrospective:**
 
