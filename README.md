@@ -75,7 +75,7 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 - 
 - **Sprint içinde tamamlanması tahmin edilen puan**:120
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprintin 120 puanla bitirilmesi hedeflendi
-- **Backlog Düzeni**:
+- **Backlog Düzeni**:Backloglar da  öncelikler belirlenirken, en yüksek değere sahip veya en acil olan görevlerin tamamlanmasına göre belirlendi ve oyunun ilk sprint sonunda kullanıcı storylerinde veya taleplerde değişiklikler veya güncellemeler yapıldı.
 - **Daily Scrum**:Son durum.yapılanlar, ve yapılmakta olan  ve destek istenen konularda discord ve whatsapp üzerinden iletişime geçildi.Sprint başlangici bititşi için ayrıca 2 kez toplantı yapıldı.
 -  [DAİLY SCRUMLAR U-4.docx](https://github.com/EminDrn/U4-BootcampGame/files/11929500/DAILY.SCRUMLAR.U-4.docx)
 
