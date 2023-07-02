@@ -72,14 +72,16 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 # Sprint 2
 - **Sprint Notları**:Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
 - https://miro.com/welcomeonboard/TXZydEp4S3VhWjRuZFFzcDlFbVlWNnM4cUdlUm9NVWljZHZMMUZoVEx4NjAzdGMzemdWSTZ2YThCOXBmWkxZV3wzNDU4NzY0NTU3Mzg3MjI2MjY0fDI=?share_link_id=170394330610
-- 
+
 - **Sprint içinde tamamlanması tahmin edilen puan**:120
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprintin 120 puanla bitirilmesi hedeflendi
 - **Backlog Düzeni**:Backloglar da  öncelikler belirlenirken, en yüksek değere sahip veya en acil olan görevlerin tamamlanmasına göre belirlendi ve oyunun ilk sprint sonunda kullanıcı storylerinde veya taleplerde değişiklikler veya güncellemeler yapıldı.
 - **Daily Scrum**:Son durum.yapılanlar, ve yapılmakta olan  ve destek istenen konularda discord ve whatsapp üzerinden iletişime geçildi.Sprint başlangici bititşi için ayrıca 2 kez toplantı yapıldı.
 -  [DAİLY SCRUMLAR U-4.docx](https://github.com/EminDrn/U4-BootcampGame/files/11929500/DAILY.SCRUMLAR.U-4.docx)
 
-- **Sprint board update**
+- **Sprint board update**:Sprint board Ekran görüntüsü:
+- ![Uploading  trello ekran görüntüsü .png…]()
+
 - **Ürün Durumu**:
 - **Sprint Review**:
 - **Sprint Retrospective:**
