@@ -80,10 +80,12 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 -  [DAİLY SCRUMLAR U-4.docx](https://github.com/EminDrn/U4-BootcampGame/files/11929500/DAILY.SCRUMLAR.U-4.docx)
 
 - **Sprint board update**:Sprint board Ekran görüntüsü:
-- ![trello ekran görüntüsü ](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/0620bc3a-bbe5-4c79-8c07-5cc36fdb2136)
+-![Ekran görüntüsü 2023-07-03 000151 U-4 ](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/f1c36868-b96d-4e70-aba1-8f9efc5a7fe6)
 
 - **Ürün Durumu**:
-- https://cdn.discordapp.com/attachments/1114819998997815372/1125152551386492938/ezgif.com-video-to-gif_2.gif
+-![U-4 TAKIM-video-to-gif_2](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/230344ac-c3ea-47e3-b5b4-004e7c980f2d)
+-![U-4 TAKIM-video-to-gif_1](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/5445b686-38a0-4749-b1a2-916eff1c6499)
+-![U-4 TAKIM-video-to-gif](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/e3ee7b0f-2fcb-4b87-b8e6-279430cf9827)
 - **Sprint Review**:
 - **Sprint Retrospective:**
 
