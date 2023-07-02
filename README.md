@@ -60,7 +60,7 @@ Sürükleyici Grafikler ve Atmosfer: Gece, gündüz döngüsü ve kanlı ay ile 
 
  -  **Ürün Durumu**:![Ekran görüntüsü 2023-06-19 022241](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/fb404778-99a1-45ce-9c9a-442eacfe25b0)
 
- -  **Sprint Review**:Sprint Review: Alınan kararlar:
+ -  **Sprint Review**:Alınan kararlar:
 
 Modellerin temelleri oluşturulmuş.
 Karakter modelinin örnekleri üretilmiştir.
@@ -89,7 +89,17 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 -![U-4 TAKIM-video-to-gif_1](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/5445b686-38a0-4749-b1a2-916eff1c6499)
 
 -![U-4 TAKIM-video-to-gif](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/e3ee7b0f-2fcb-4b87-b8e6-279430cf9827)
-- **Sprint Review**:
+- **Sprint Review**:Alınan kararlar:
+-  Daily Scrum'ların Discord kanalı üzerinden toplanıp katılamayanlar için daha önceden bildirip not düşmesi gerektiği karaı alındı
+ -  3.sprint için oynanabilir bir oyun için görevler üzerinde karar verildi
+-  Game Art ve Kodlama için ayrılan efor ve saatin arttırılması kararı alındı.
+-  Ekip içi iletişimin iyi olmasına rağmen normal hayatta ki yoğunluktan dolayı katılamayanlar için 3. sprintte daha efor kaydetmeleri karar alındı.
+
+-  Sprint Review katılımcıları:
+-  Aytuğ Bengü
+-  Gülcihan Çelik
+-  Emin Duran
+-  Fatma Beyza Çepni
 - **Sprint Retrospective:**
 
 
