@@ -91,6 +91,11 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
 -![U-4 TAKIM-video-to-gif_1](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/5445b686-38a0-4749-b1a2-916eff1c6499)
 
 -![U-4 TAKIM-video-to-gif](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/e3ee7b0f-2fcb-4b87-b8e6-279430cf9827)
+![Ch_v2](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/b61b5b6c-c9be-48e8-8563-f383557641e3)
+![Untitled-1](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/5c510943-60a8-49c3-b5df-0a5786c69bf4)
+![Untitled-2](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/ef5db3dd-2d98-4604-8621-df3e73875fd9)
+![Untitled-3](https://github.com/EminDrn/U4-BootcampGame/assets/129333111/974d4b65-c57a-4b42-98d9-9f5bfc7d6342)
+
 - **Sprint Review**:Alınan kararlar:
   Daily Scrum'ların Discord kanalı üzerinden toplanıp katılamayanlar için daha önceden bildirip not düşmesi gerektiği karaı alındı
   3.sprint için oynanabilir bir oyun için görevler üzerinde karar verildi
