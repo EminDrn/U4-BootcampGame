@@ -70,7 +70,15 @@ Sprint Review katılımcıları: Bütün ekip sprint review sürecindeki kararla
 Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım üyelerinin gelecek sprintlerde daha aktif olması ve sınavları biten arkadaşların proje üstünde durulması gerektiği kararı alınmıştır.
 
 # Sprint 2
-- **Sprint Notları**:Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
+- **Sprint Notları**:
+-Yeniden görev dağılımı yapıldı
+-Eksik kalan görevlerin bitirilmesi hakkında kesin karara gelindi
+-Dailiy scrumların her gün Discord üzerinden gerçekleşmesi ve Whatsapp üzerinden günlük durum notları düşmesi kararı alındı
+-Herkes üzerine düşen görevi saatinde ve gününde yapma yapamadığı halde takıma bildirmesi gerektiği konuşuldu
+ saat ve gün mekaniğinin Ekranda saatin güncellenip yazacağı text olabilir
+- Uı tasarımlarında  gündüz ve gece karanlık dolunay çizimi İki resimin ortasında 7 kare veya dikdortgen parçadan oluşan gün geçtikçe artan bir bölüm ve envanterleri sayacak Uı olabilir
+-her modelin 4 canı ve 4 vuruşta kırılıyor olabilir ve her canınnın ayrı modelleri olabilir.
+(yine daily scrumlarda oyun için oldukca fazla konuşuldu)Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
 - https://miro.com/welcomeonboard/TXZydEp4S3VhWjRuZFFzcDlFbVlWNnM4cUdlUm9NVWljZHZMMUZoVEx4NjAzdGMzemdWSTZ2YThCOXBmWkxZV3wzNDU4NzY0NTU3Mzg3MjI2MjY0fDI=?share_link_id=170394330610
 
 - **Sprint içinde tamamlanması tahmin edilen puan**:120
