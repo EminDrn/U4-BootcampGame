@@ -78,7 +78,14 @@ Takım içindeki görev dağılımıyla ilgili düzenleme yapılmıştır.Takım
  saat ve gün mekaniğinin Ekranda saatin güncellenip yazacağı text olabilir
 - Uı tasarımlarında  gündüz ve gece karanlık dolunay çizimi İki resimin ortasında 7 kare veya dikdortgen parçadan oluşan gün geçtikçe artan bir bölüm ve envanterleri sayacak Uı olabilir
 -her modelin 4 canı ve 4 vuruşta kırılıyor olabilir ve her canınnın ayrı modelleri olabilir.
-(yine daily scrumlarda oyun için oldukca fazla konuşuldu)Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
+(yine daily scrumlarda oyun için oldukca fazla konuşuldu)
+Sprint sonu toplantı notları
+Son sprint için yapılacaklar gözden geçirildi
+-Zombi saldırısı  için modeller ve oyun hikayesi hakkında konuşuldu.
+-Toplanacak kaynaklardan ev yapımı /silah atolyesi gibi oyun  , mekanikleri hakkında konuşuldu 3.sprinte bırakıldı
+-Görevler üzerinde geri dönütler alındı hekes görevinde devam etmesi kararı alındı.
+-3.Sprint için oynanılabilir bir oyun çıkarmak ve ileriki süreçler hakkında konuşuldu.
+  Toplantı notları ve puanlar hem trello hem miro üzerine kaydedildi
 - https://miro.com/welcomeonboard/TXZydEp4S3VhWjRuZFFzcDlFbVlWNnM4cUdlUm9NVWljZHZMMUZoVEx4NjAzdGMzemdWSTZ2YThCOXBmWkxZV3wzNDU4NzY0NTU3Mzg3MjI2MjY0fDI=?share_link_id=170394330610
 
 - **Sprint içinde tamamlanması tahmin edilen puan**:120
