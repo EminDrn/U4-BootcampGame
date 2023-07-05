@@ -38,6 +38,7 @@ public class TreeAnimationControl : MonoBehaviour
             }
             if (distanceToTree <= distanceThreshold && _touch.phase == TouchPhase.Ended)
             {
+                Debug.Log("Anim başlaması lazım");
                  if (isNearCharacter)
             {
                 // Zamanlayıcıyı artır
