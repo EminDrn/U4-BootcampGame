@@ -27,10 +27,12 @@ private void OnTriggerStay(Collider other)
     {
         Animator otherAnimator = other.gameObject.GetComponent<Animator>();
         bool isNearTree = otherAnimator.GetBool("isNearTree");
+        bool isMoving = otherAnimator.GetBool("isMoving");
         Debug.Log("isNearTree değeri: " + otherAnimator.GetBool("isNearTree"));
         Debug.Log("Merhaba   : " +timer);
-        if(isNearTree){
+        if(isNearTree && isMoving == false){
             timer += Time.deltaTime;
+
             if(timer>=waitTime && currentIndex < agacBolumleri.Length ){
                 Destroy(agacBolumleri[currentIndex]);
                 currentIndex++;
