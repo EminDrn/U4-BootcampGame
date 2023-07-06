@@ -7,6 +7,14 @@ TagManager:
   - tree
   - stone
   - car
+  - WallArea
+  - wood
+  - metal
+  - gold
+  - gold_col
+  - metal_col
+  - stone_col
+  - wood_col
   layers:
   - Default
   - TransparentFX

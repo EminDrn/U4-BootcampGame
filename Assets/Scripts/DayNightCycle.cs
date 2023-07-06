@@ -30,11 +30,11 @@ public class DayNightCycle : MonoBehaviour
 
     void TextCallFunction()
     {
-        dayText.text = " Day: "+ day ;
-        timeText.text = "Time: "+ (string.Format("{0:00}:{1:00}",hour,minute));
+        dayText.text = /*" Day: "+*/ day.ToString() ; //.ToString() eklendi
+        timeText.text = /*"Time: "+ */ (string.Format("{0:00}:{1:00}",hour,minute));
         if (isBoosDay== true)
         {
-            bossText.text = " It's boss fight day!!!";
+            bossText.text = "Fight Time!"; /*" It's boss fight day!!!";*/
         }
         else
         {

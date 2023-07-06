@@ -15,7 +15,7 @@ public class stacking : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("wood"))
+        if(other.CompareTag("wood_col")) // eski isim wood
         {
             //other.gameObject.tag = "Untagged";
             collectedWoodCount++; // Odun sayısını artır
@@ -25,21 +25,21 @@ public class stacking : MonoBehaviour
 
         }
 
-        else if(other.CompareTag("stone"))
+        else if(other.CompareTag("stone_col")) // eski isim stone eminin yazığı stone tagıyla çakışıyor
         {
             collectedStoneCount++; 
             Debug.Log("Tas toplandı! Toplam tas sayısı: " + collectedStoneCount);
             Destroy(other.gameObject);
             resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount;
         }
-        else if(other.CompareTag("metal"))
+        else if(other.CompareTag("metal_col")) // eski isim metal
         {
             collectedMetalCount++; 
             Debug.Log("Metal toplandı! Toplam metal sayısı: " + collectedMetalCount);
             Destroy(other.gameObject);
             resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount;
         }
-        else if(other.CompareTag("gold"))
+        else if(other.CompareTag("gold_col")) // eski isim gold
         {
             collectedGoldCount++; 
             Debug.Log("Altın toplandı! Toplam altın sayısı: " + collectedGoldCount);

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 3defb82b6b8ac6c4bbad38437c0c3d6e
   - enabled: 1
+    path: Assets/Scenes/All_v1.unity
+    guid: 420d6b48aa4745d4f95f514a86b9c668
+  - enabled: 1
     path: Assets/Scenes/Deneme-Emin.unity
     guid: 987ec71d93489c64a81482f68177ae10
   m_configObjects: {}
