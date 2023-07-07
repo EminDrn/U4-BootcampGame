@@ -10,6 +10,13 @@ public class StoneAnimation : MonoBehaviour
     private Touch _touch;
     private float timer = 0f; // Zamanlayıcı
     public bool isNearCharacter = false;
+
+
+    public bool isCodeActive = false;
+
+    [SerializeField] GameObject stoneLog;
+    [SerializeField] GameObject spawnPos;
+    [SerializeField] ParticleSystem parStone;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +55,9 @@ public class StoneAnimation : MonoBehaviour
                 {
                     // Animasyonu başlat
                     GetComponent<Animator>().SetBool("isNearStone", true);
-                    
+
+                    StartCoroutine(DropCol());
+
                 }
                 else if(timer >= endWaitTime)
                 {
@@ -61,5 +70,22 @@ public class StoneAnimation : MonoBehaviour
             
            
         }
+    }
+
+    private IEnumerator DropCol()
+    {
+        yield return new WaitForSeconds(1f);
+
+        if (!isCodeActive)
+        {
+            Instantiate(stoneLog, spawnPos.transform.position, Quaternion.identity);
+            parStone.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y + 1.5f, spawnPos.transform.position.z);
+            parStone.Play();
+            isCodeActive = true;
+        }
+
+        yield return new WaitForSeconds(2f);
+
+        isCodeActive = false;
     }
 }

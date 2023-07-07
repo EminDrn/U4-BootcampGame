@@ -20,10 +20,7 @@ public class TreeAnimationControl : MonoBehaviour
     [SerializeField] ParticleSystem parWood;
 
 
-    void Awake() {
-	QualitySettings.vSyncCount = 1;
-	Application.targetFrameRate = 60;
-}
+
     void Start()
     {
     }
@@ -90,9 +87,8 @@ public class TreeAnimationControl : MonoBehaviour
 
         if (!isCodeActive)
         {
-            Debug.Log("31 BAŞLADI");
             Instantiate(treeLog, spawnPos.transform.position, Quaternion.identity);
-            parWood.transform.position = spawnPos.transform.position;
+            parWood.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y + 1f, spawnPos.transform.position.z);
             parLeaf.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y +1.5f, spawnPos.transform.position.z);
             parWood.Play();
             parLeaf.Play();
