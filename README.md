@@ -122,6 +122,7 @@ Son sprint için yapılacaklar gözden geçirildi
   Fatma Beyza Çepni ,
 - **Sprint Retrospective:** Bazı sorunlar nedeniyle eksik kalan backloglar için  çözümler üretildi,  Ekip içi iletişimin iyi olmasına rağmen normal hayatta ki yoğunluktan dolayı katılamayanlar için 3. sprintte daha efor kaydetmeleri karar alındı.
 
+-  # Sprint 3
 
 
 
