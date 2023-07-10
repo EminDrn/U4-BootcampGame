@@ -123,6 +123,15 @@ Son sprint için yapılacaklar gözden geçirildi
 - **Sprint Retrospective:** Bazı sorunlar nedeniyle eksik kalan backloglar için  çözümler üretildi,  Ekip içi iletişimin iyi olmasına rağmen normal hayatta ki yoğunluktan dolayı katılamayanlar için 3. sprintte daha efor kaydetmeleri karar alındı.
 
 -  # Sprint 3
+-   **Sprint Notları**:
+-  **Sprint içinde tamamlanması tahmin edilen puan**:
+-  **Puan tamamlama mantığı**:
+-  **Backlog Düzeni**:
+-  **Daily Scrum**:
+-  **Sprint board update**:
+-  **Ürün Durumu**:
+-  **Sprint Review**:
+-  **Sprint Retrospective:**
 
 
 
