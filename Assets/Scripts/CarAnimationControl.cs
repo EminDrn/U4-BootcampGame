@@ -10,15 +10,6 @@ public class CarAnimationControl : MonoBehaviour
     private Touch _touch;
     private float timer = 0f; // Zamanlayıcı
     public bool isNearCharacter = false;
-
-    public bool isCodeActive = false;
-
-    [SerializeField] GameObject metalLog;
-    [SerializeField] GameObject spawnPos;
-    [SerializeField] ParticleSystem parCar1;
-    [SerializeField] ParticleSystem parCar2;
-    [SerializeField] ParticleSystem parCar3;
-    [SerializeField] ParticleSystem parCar4;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,9 +48,7 @@ public class CarAnimationControl : MonoBehaviour
                 {
                     // Animasyonu başlat
                     GetComponent<Animator>().SetBool("isNearCar", true);
-
-                    StartCoroutine(DropCol());
-
+                    
                 }
                 else if(timer >= endWaitTime)
                 {
@@ -72,28 +61,5 @@ public class CarAnimationControl : MonoBehaviour
             
            
         }
-    }
-
-    private IEnumerator DropCol()
-    {
-        yield return new WaitForSeconds(1f);
-
-        if (!isCodeActive)
-        {
-            Instantiate(metalLog, spawnPos.transform.position, Quaternion.identity);
-            parCar1.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y + 1.5f, spawnPos.transform.position.z);
-            parCar2.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y + 1.5f, spawnPos.transform.position.z);
-            parCar3.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y + 1.5f, spawnPos.transform.position.z);
-            parCar4.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y + 1.5f, spawnPos.transform.position.z);
-            parCar1.Play();
-            parCar2.Play();
-            parCar3.Play();
-            parCar4.Play();
-            isCodeActive = true;
-        }
-
-        yield return new WaitForSeconds(2f);
-
-        isCodeActive = false;
     }
 }

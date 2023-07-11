@@ -3,31 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class woodBuildSystem : MonoBehaviour
+public class tableBuildSystem : MonoBehaviour
 
 {
-    //public delegate void OnBuyArea();
-    //public static event OnBuyArea OnBuyingWall;
-    public GameObject wallGameObject, wallArea, areaToBuy;
-    public static int cost = 2;
+    public GameObject tableGameObject, tableArea, areaToBuy;
+    public static int cost = 10;
     public int woodAmount;
     private float timeInsideCollider = 0f;  // Zamanlayıcı
     private bool isInsideCollider = false; 
     private float requiredTime = 2f;
 
 
-    public void Buy(int woodAmount)
-    {
-        if( woodAmount>=cost)
-        {
-            stacking.decreaiseWood(cost);
-            wallArea.transform.GetChild(0).gameObject.SetActive(true);
-            wallArea.transform.GetChild(0).transform.SetParent(null,true);
-            wallArea.SetActive(false);
-            
-        }
-
-    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
@@ -47,6 +33,21 @@ public class woodBuildSystem : MonoBehaviour
         }
     }
 
+    public void Buy(int woodAmount)
+    {
+        Debug.Log("buya girdi");
+        Debug.Log("sayi"+woodAmount);
+        if( woodAmount>=cost)
+        {
+            Debug.Log("if e girdi");
+            stacking.decreaiseWood(cost);
+            tableArea.transform.GetChild(0).gameObject.SetActive(true);
+            tableArea.transform.GetChild(0).transform.SetParent(null,true);
+            tableArea.SetActive(false);
+            
+        }
+
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -5,42 +5,80 @@ using UnityEngine.UI;
 using TMPro;
 public class DayNightCycle : MonoBehaviour
 {
-    private const int TIMESCALE = 360*10;
+    private const int TIMESCALE = 36000;
     public static bool isBoosDay;
     public static int day, hour, minute;
     public static float second;
     public TextMeshProUGUI dayText;
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI bossText;
+    public Button createZombieButtton;
+    private bool isCountingTime = true;
+    private bool isButtonClicked = false;
+    private bool isZombieGenerated = false;
+    public GameObject zombiePrefab, bossZombiePrefab;
+    private float countdownTimer = 10f;
+    public int zombieCount;
     // Start is called before the first frame update
-
-    void Awake()
-    {
-        //QualitySettings.vSyncCount = 1;
-        Application.targetFrameRate = 120;
-    }
     void Start()
     {
-        hour = 08;
+        hour = 16;
         dayText.text = " Day: "+ day;
         timeText.text = "Time: "+ (string.Format("{0:00}:{1:00}",hour,minute));
+        createZombieButtton.onClick.AddListener(buttonClicked);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-       CalculateTime(); 
-       CalculateBossDay(day);
+        
+        if(isCountingTime)
+        {
+            if(hour == 23 && minute == 58)
+            {
+                
+                isCountingTime= false;
+                createZombieButtton.gameObject.SetActive(true);
+                Debug.Log(countdownTimer);
+                countdownTimer -= Time.deltaTime;
+                if(countdownTimer<=0f)
+                {
+                    if(!isButtonClicked)
+                    {
+                        CreateZombies();
+                        isButtonClicked= false;
+                    }
+                }
+                
+            }
+            CalculateTime(); 
+            CalculateBossDay(day);
+        }
+        else{
+            Debug.Log(countdownTimer);
+                countdownTimer -= Time.deltaTime;
+                if(countdownTimer<=0f)
+                {
+                    Debug.Log("zaman doldu");
+                    if(!isButtonClicked && !isZombieGenerated)
+                    {
+                        CreateZombies();
+                        isZombieGenerated = true;
+                        createZombieButtton.gameObject.SetActive(false);
+                        isButtonClicked= false;
+                    }
+                }
+        }
     }
 
     void TextCallFunction()
     {
-        dayText.text = /*" Day: "+*/ day.ToString() ; //.ToString() eklendi
-        timeText.text = /*"Time: "+ */ (string.Format("{0:00}:{1:00}",hour,minute));
+        dayText.text = " Day: "+ day ;
+        timeText.text = "Time: "+ (string.Format("{0:00}:{1:00}",hour,minute));
         if (isBoosDay== true)
         {
-            bossText.text = "Fight Time!"; /*" It's boss fight day!!!";*/
+            bossText.text = " It's boss fight day!!!";
         }
         else
         {
@@ -61,45 +99,92 @@ public class DayNightCycle : MonoBehaviour
     }
 
     void CalculateTime()
+{
+    second += Time.deltaTime * TIMESCALE;
+    if (second >= 60)
     {
-            second += Time.deltaTime * TIMESCALE;
-            if (second >= 60)
-            {
-                minute++;
-                second = 0;
-            }
+        minute++;
+        second = 0;
+    }
 
-            if (minute >= 60)
-            {
-                hour++;
-                minute = 0;
-            }
+    if (minute >= 60)
+    {
+        hour++;
+        minute = 0;
+    }
 
-            if (hour >= 24)
-            {
-                day++;
-                hour = 0;
-            }
+    if (hour >= 24)
+    {
+        day++;
+        hour = 0;
+    }
 
-            TextCallFunction();
-        /*second += Time.deltaTime * TIMESCALE;
-        if(second>=60)
+    TextCallFunction();
+}
+    private void CreateZombies()
+    {
+        if(day == 0)
         {
-            minute++;
-            second = 0; 
-            TextCallFunction();   
+            zombieCount= 3;
         }
-        else if(minute>=60)
+        else if(day == 1)
         {
-            hour++;
-            minute = 0;
-            TextCallFunction();
+            zombieCount = 5;
         }
-        else if(hour >= 24)
+        else if(day == 2)
         {
-            day++;
-            hour = 0;
-            TextCallFunction();
-        }*/
+            zombieCount = 8;
+        }
+        else if(day == 3)
+        {
+            zombieCount = 10;
+        }
+        else if(day == 4)
+        {
+            zombieCount = 12;
+        }
+        else if(day == 5)
+        {
+            zombieCount = 15;
+        }
+        else if(day == 6)
+        {
+            zombieCount = 5;
+        }
+        else if(day == 7)
+        {
+            zombieCount = 15;
+        }
+        for(int a = 0; a < zombieCount; a++)
+        {
+            Instantiate(zombiePrefab, GetRandomPosition(), Quaternion.identity);
+        }
+        if(isBoosDay)
+        {
+            createBoss();
+        }
+        isZombieGenerated = true;
+    }
+    private void buttonClicked()
+    {
+        isButtonClicked = true;
+        createZombieButtton.interactable = false;
+        if(isButtonClicked && !isZombieGenerated)
+        {
+            CreateZombies();
+            createZombieButtton.gameObject.SetActive(false);
+            isButtonClicked= false;
+        }
+    }
+
+    private Vector3 GetRandomPosition()
+    {
+        float randomX = Random.Range(-10f, 10f);
+        float randomZ = Random.Range(-10f, 10f);
+        return new Vector3(randomX, 0f, 0f);
+    }
+    private void createBoss()
+    {
+        Instantiate(bossZombiePrefab, GetRandomPosition(), Quaternion.identity);
     }
 }

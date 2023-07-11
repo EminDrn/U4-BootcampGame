@@ -46,13 +46,10 @@ private void OnTriggerStay(Collider other)
                 currentIndex++;
                 timer = 0f;
                 }    
-                else if(currentIndex > 0  && currentIndex <6)
-                    {
-                        arabaBolumleri[currentIndex - 1].SetActive(false);
-                        Debug.Log("ModelKapandı");
-                        arabaBolumleri[currentIndex].SetActive(true);
-                        Debug.Log("Yeni Model Açıldı");
-                        currentIndex++;
+                else if(currentIndex > 0  && currentIndex <6){
+                    arabaBolumleri[currentIndex -1 ].SetActive(false);
+                    arabaBolumleri[currentIndex].SetActive(true);
+                    currentIndex++;
                     timer = 0f;             
 
                 }

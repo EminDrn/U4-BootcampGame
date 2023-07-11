@@ -10,19 +10,9 @@ public class TreeAnimationControl : MonoBehaviour
     private Touch _touch;
     private float timer = 0f; // Zamanlayıcı
     public bool isNearCharacter = false;
-    
-    
-    public bool isCodeActive = false;
-
-    [SerializeField] GameObject treeLog;
-    [SerializeField] GameObject spawnPos;
-    [SerializeField] ParticleSystem parLeaf;
-    [SerializeField] ParticleSystem parWood;
-
-
-
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -56,19 +46,12 @@ public class TreeAnimationControl : MonoBehaviour
 
                 // Bekleme süresini kontrol et
                 if (timer >= waitTime && timer <endWaitTime)
-                    {
-                        // Animasyonu başlat
-                        GetComponent<Animator>().SetBool("isNearTree", true);
-                        
-                        StartCoroutine(DropCol());
-
-                        /*if(isCodeActive == true)
-                        {
-                            StartCoroutine(IsTrue());
-                        }*/
-
-                    }
-                    else if(timer >= endWaitTime)
+                {
+                    // Animasyonu başlat
+                    GetComponent<Animator>().SetBool("isNearTree", true);
+                    
+                }
+                else if(timer >= endWaitTime)
                 {
                     // Bekleme süresi dolmadı, animasyonu durdur
                     GetComponent<Animator>().SetBool("isNearTree", false);
@@ -80,30 +63,4 @@ public class TreeAnimationControl : MonoBehaviour
            
         }
     }
-
-    private IEnumerator DropCol()
-    {
-        yield return new WaitForSeconds(1f);
-
-        if (!isCodeActive)
-        {
-            Instantiate(treeLog, spawnPos.transform.position, Quaternion.identity);
-            parWood.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y + 1f, spawnPos.transform.position.z);
-            parLeaf.transform.position = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y +1.5f, spawnPos.transform.position.z);
-            parWood.Play();
-            parLeaf.Play();
-            isCodeActive = true;
-        }
-
-        yield return new WaitForSeconds(2f);
-
-        isCodeActive = false;
-    }
-
-       /* private IEnumerator IsTrue()
-        {
-            yield return new WaitForSeconds(1f);
-            isCodeActive = false;
-        }*/
-
-    }
+}
