@@ -10,6 +10,9 @@ public class TreeAnimationControl : MonoBehaviour
     private Touch _touch;
     private float timer = 0f; // Zamanlayıcı
     public bool isNearCharacter = false;
+
+    [SerializeField] private Animator anim;
+
     void Start()
     {
         
@@ -48,7 +51,9 @@ public class TreeAnimationControl : MonoBehaviour
                 if (timer >= waitTime && timer <endWaitTime)
                 {
                     // Animasyonu başlat
+                    //buraya yazılacak
                     GetComponent<Animator>().SetBool("isNearTree", true);
+                    Invoke("IsNearTreeFalse", 2.0f);
                     
                 }
                 else if(timer >= endWaitTime)
@@ -62,5 +67,12 @@ public class TreeAnimationControl : MonoBehaviour
             
            
         }
+
     }
+
+    public void IsNearTreeFalse()
+    {
+        anim.SetBool("isNearTree", false);
+    }
+
 }

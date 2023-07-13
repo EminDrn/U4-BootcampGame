@@ -38,8 +38,13 @@ private void OnTriggerStay(Collider other)
                             
             }
         }
+            if (currentIndex == 4)
+            {
+                Destroy(gameObject);
+            }
 
     }
 }
-    
+
+
 }

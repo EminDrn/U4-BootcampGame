@@ -56,7 +56,13 @@ private void OnTriggerStay(Collider other)
                             
             }
         }
-    }
+
+            if (currentIndex == 6)
+            {
+                Destroy(gameObject);
+            }
+
+        }
 }
 }
 

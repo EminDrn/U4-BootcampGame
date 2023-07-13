@@ -5508,6 +5508,7 @@ MonoBehaviour:
   waitTime: 3
   endWaitTime: 5
   isNearCharacter: 0
+  anim: {fileID: 8801540508763976798}
 --- !u!114 &3120941611368646011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5535,7 +5536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e96254ee0a3c2641b3cbc4172d417fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 6, z: -2}
+  offset: {x: 0, y: 6, z: -3}
   chaseSpeed: 5
 --- !u!4 &3120941612478810761
 Transform:
@@ -5544,14 +5545,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3120941612478810772}
-  m_LocalRotation: {x: 0.499964, y: 0.010391285, z: -0.0059994105, w: 0.86596304}
-  m_LocalPosition: {x: 0, y: 6, z: -2}
+  m_LocalRotation: {x: 0.42258784, y: 0.010874627, z: -0.0050709215, w: 0.9062426}
+  m_LocalPosition: {x: 0, y: 6, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4930050986240857668}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 60, y: 1.375, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 1.375, z: 0}
 --- !u!20 &3120941612478810762
 Camera:
   m_ObjectHideFlags: 0
@@ -6309,6 +6310,7 @@ MonoBehaviour:
   waitTime: 3
   endWaitTime: 4
   isNearCharacter: 0
+  anim: {fileID: 8801540508763976798}
 --- !u!114 &8801540508763976800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6325,6 +6327,7 @@ MonoBehaviour:
   waitTime: 3
   endWaitTime: 4
   isNearCharacter: 0
+  anim: {fileID: 8801540508763976798}
 --- !u!114 &8801540508763976802
 MonoBehaviour:
   m_ObjectHideFlags: 0

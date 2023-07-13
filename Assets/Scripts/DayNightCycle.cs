@@ -56,7 +56,7 @@ public class DayNightCycle : MonoBehaviour
             CalculateBossDay(day);
         }
         else{
-            Debug.Log(countdownTimer);
+            //Debug.Log(countdownTimer);
                 countdownTimer -= Time.deltaTime;
                 if(countdownTimer<=0f)
                 {

@@ -43,10 +43,15 @@ private void OnTriggerStay(Collider other)
                 Destroy(kayaBolumleri[currentIndex]);
                 currentIndex++;
                 timer = 0f;
+                    Debug.Log(currentIndex);
                             
             }
         }
 
-    }
+            if (currentIndex == 4)
+            {
+                Destroy(gameObject);
+            }
+        }
 }
 }
