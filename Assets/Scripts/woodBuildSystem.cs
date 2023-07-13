@@ -15,6 +15,8 @@ public class woodBuildSystem : MonoBehaviour
     private bool isInsideCollider = false; 
     private float requiredTime = 2f;
 
+    [SerializeField] private Slider slider;
+
 
     public void Buy(int woodAmount)
     {
@@ -37,6 +39,17 @@ public class woodBuildSystem : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (woodAmount >= 2)
+            {
+                slider.value = timeInsideCollider;
+            }
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
@@ -44,6 +57,7 @@ public class woodBuildSystem : MonoBehaviour
             isInsideCollider = false;
             timeInsideCollider = 0f;
             areaToBuy = null;
+            slider.value = 0f;
         }
     }
 
