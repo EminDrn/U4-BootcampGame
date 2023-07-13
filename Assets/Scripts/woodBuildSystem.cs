@@ -60,6 +60,7 @@ public class woodBuildSystem : MonoBehaviour
         if (isInsideCollider)
         {
             timeInsideCollider +=Time.deltaTime;
+
             if(timeInsideCollider >= requiredTime)
             {
                 woodAmount = GetWoodCount();

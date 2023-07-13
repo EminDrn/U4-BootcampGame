@@ -4950,7 +4950,7 @@ Transform:
   - {fileID: 6677271202707312003}
   - {fileID: 2882566270113537940}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2445220849486332709
 BoxCollider:
@@ -4971,8 +4971,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5952353, y: 1.9233825, z: 1.3422141}
-  m_Center: {x: -0.7668097, y: 0.46169126, z: -1.2545063}
+  m_Size: {x: 1.8932245, y: 2.5023828, z: 1.6748242}
+  m_Center: {x: -0.7783917, y: 0.7511914, z: -1.2385924}
 --- !u!95 &2445220849486332708
 Animator:
   serializedVersion: 5
@@ -5188,7 +5188,7 @@ GameObject:
   - component: {fileID: 7852576332325675436}
   m_Layer: 0
   m_Name: stone
-  m_TagString: stone
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

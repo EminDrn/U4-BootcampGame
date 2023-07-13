@@ -3276,7 +3276,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!95 &1153783430
 Animator:
@@ -4686,7 +4686,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!95 &1639139892
 Animator:
@@ -7321,11 +7321,6 @@ MonoBehaviour:
   waitTime: 3
   endWaitTime: 5
   isNearCharacter: 0
-  isCodeActive: 0
-  treeLog: {fileID: 0}
-  spawnPos: {fileID: 0}
-  parLeaf: {fileID: 0}
-  parWood: {fileID: 0}
 --- !u!114 &3120941611368646011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8248,7 +8243,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!195 &5866666020234988699
 NavMeshAgent:
@@ -9267,10 +9262,6 @@ MonoBehaviour:
   waitTime: 3
   endWaitTime: 4
   isNearCharacter: 0
-  isCodeActive: 0
-  stoneLog: {fileID: 0}
-  spawnPos: {fileID: 0}
-  parStone: {fileID: 0}
 --- !u!114 &8801540508763976800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9287,13 +9278,6 @@ MonoBehaviour:
   waitTime: 3
   endWaitTime: 4
   isNearCharacter: 0
-  isCodeActive: 0
-  metalLog: {fileID: 0}
-  spawnPos: {fileID: 0}
-  parCar1: {fileID: 0}
-  parCar2: {fileID: 0}
-  parCar3: {fileID: 0}
-  parCar4: {fileID: 0}
 --- !u!114 &8801540508763976801
 MonoBehaviour:
   m_ObjectHideFlags: 0
