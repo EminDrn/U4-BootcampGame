@@ -217,4 +217,11 @@ public class DayNightCycle : MonoBehaviour
     {
         Instantiate(bossZombiePrefab, GetRandomPosition(), Quaternion.identity);
     }
+
+    public void ZombieDed()
+    {
+        zombieCount -= 1;
+        GameObject zombieClone = GameObject.Find("El(Clone)");
+        Destroy(zombieClone);
+    }
 }
