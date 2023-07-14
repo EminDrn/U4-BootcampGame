@@ -18,8 +18,9 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField] private bool isZombieGenerated = false;
     [SerializeField] private bool cZButton = false;
     public GameObject zombiePrefab, bossZombiePrefab;
-    private float countdownTimer = 10f;
+    public float countdownTimer = 10f;
     public int zombieCount;
+    public bool zombieFight = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +39,7 @@ public class DayNightCycle : MonoBehaviour
         {
             if(hour == 23 && minute == 59)
             {
-                
+                countdownTimer = 10f;
                 isCountingTime= false;
                 createZombieButtton.gameObject.SetActive(true);
                 cZButton = true;
@@ -49,6 +50,7 @@ public class DayNightCycle : MonoBehaviour
                     if(!isButtonClicked)
                     {
                         CreateZombies();
+                        isZombieGenerated = true;
                         isButtonClicked= false;
                         cZButton = false;
                     }
@@ -61,9 +63,11 @@ public class DayNightCycle : MonoBehaviour
         else{
             //Debug.Log(countdownTimer);
                 countdownTimer -= Time.deltaTime;
+
                 if(countdownTimer<=0f)
                 {
                     Debug.Log("zaman doldu");
+
                     if(!isButtonClicked && !isZombieGenerated)
                     {
                         CreateZombies();
@@ -73,6 +77,15 @@ public class DayNightCycle : MonoBehaviour
                         cZButton = false;
                     }
                 }
+            if (zombieCount== 0 && zombieFight == true && isCountingTime == false)
+            {
+                minute ++;
+                isZombieGenerated = false;
+                isCountingTime = true;
+                zombieFight = false;
+                
+                createZombieButtton.interactable = true;
+            }
         }
 
         /*if (zombieCount == 0 && !isCountingTime)
@@ -138,6 +151,7 @@ public class DayNightCycle : MonoBehaviour
 }
     private void CreateZombies()
     {
+        zombieFight = true;
         if(day == 0)
         {
             zombieCount= 3;
@@ -184,10 +198,11 @@ public class DayNightCycle : MonoBehaviour
     {
         isButtonClicked = true;
         createZombieButtton.interactable = false;
+        createZombieButtton.gameObject.SetActive(false);
+
         if(isButtonClicked && !isZombieGenerated)
         {
             CreateZombies();
-            createZombieButtton.gameObject.SetActive(false);
             isButtonClicked= false;
         }
     }
