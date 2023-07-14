@@ -4888,6 +4888,13 @@ MonoBehaviour:
   - {fileID: 3676277534254304116}
   - {fileID: 6150713721656235933}
   waitTime: 0.95
+  par_Car:
+  - {fileID: 8384321249077793772}
+  - {fileID: 7005194802166146253}
+  - {fileID: 5854155753444773410}
+  - {fileID: 7071833752038607422}
+  carCol: {fileID: 2164212162611530407, guid: e03f453c4819ad141a017b3e5459ecdd, type: 3}
+  spawnPos: {fileID: 0}
 --- !u!65 &2852522766691106218
 BoxCollider:
   m_ObjectHideFlags: 0

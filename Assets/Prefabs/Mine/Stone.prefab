@@ -4924,6 +4924,7 @@ GameObject:
   - component: {fileID: 2445220849486332709}
   - component: {fileID: 2445220849486332708}
   - component: {fileID: 2445220849486332707}
+  - component: {fileID: 8315389399727798562}
   m_Layer: 0
   m_Name: Stone
   m_TagString: stone
@@ -4950,7 +4951,7 @@ Transform:
   - {fileID: 6677271202707312003}
   - {fileID: 2882566270113537940}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2445220849486332709
 BoxCollider:
@@ -5011,6 +5012,33 @@ MonoBehaviour:
   - {fileID: 2736338061490713398}
   - {fileID: 5070393930758717398}
   waitTime: 0.95
+  par_Stone:
+  - {fileID: 7937991857233062292}
+  stoneCol: {fileID: 1268008769109829471, guid: b4ee54c921561b444a08e72cd332b8f4, type: 3}
+  spawnPos: {fileID: 0}
+--- !u!136 &8315389399727798562
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2445220849486332705}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: -0.78, y: 0.43, z: -1.25}
 --- !u!1 &2934575924570611071
 GameObject:
   m_ObjectHideFlags: 0
