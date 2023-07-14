@@ -15,6 +15,7 @@ TagManager:
   - metal_col
   - stone_col
   - wood_col
+  - arrow
   layers:
   - Default
   - TransparentFX

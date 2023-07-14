@@ -14,6 +14,9 @@ public class stacking : MonoBehaviour
     public int deneme = 0;
     public TextMeshProUGUI resourceText;
 
+    //public AudioClip aroundTheWorld;
+
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("wood_col"))

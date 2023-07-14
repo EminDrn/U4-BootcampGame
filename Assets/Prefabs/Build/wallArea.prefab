@@ -253,7 +253,6 @@ GameObject:
   - component: {fileID: 7489913644656927274}
   - component: {fileID: 7489913644656927253}
   - component: {fileID: 7489913644656927252}
-  - component: {fileID: 7489913644656927255}
   - component: {fileID: 7489913644656927254}
   - component: {fileID: 7489913644656927275}
   m_Layer: 0
@@ -331,28 +330,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7489913644656927255
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7489913644656927249}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &7489913644656927254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -368,7 +345,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -402,7 +379,6 @@ GameObject:
   - component: {fileID: 7489913645087750622}
   - component: {fileID: 7489913645087750617}
   - component: {fileID: 7489913645087750616}
-  - component: {fileID: 7489913645087750619}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -475,27 +451,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7489913645087750619
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7489913645087750618}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.0201254, y: 0.096410625, z: 1.0004472}
-  m_Center: {x: 0.0059773973, y: -0.45179436, z: -0.00022255415}
 --- !u!1 &7642199494007232915
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,9 +567,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4292049259792127846, guid: 5a8ef068b2ea459449fe16b8c778a510, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8711208261100703259}
-    - targetCorrespondingSourceObject: {fileID: 4292049259792127846, guid: 5a8ef068b2ea459449fe16b8c778a510, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5494236714351354767}
   m_SourcePrefab: {fileID: 100100000, guid: 5a8ef068b2ea459449fe16b8c778a510, type: 3}
 --- !u!1 &2863630499189609999 stripped
 GameObject:
@@ -640,35 +592,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.012694603, y: 0.02, z: 0.008}
-  m_Center: {x: 0.005347302, y: 0.010000009, z: 0.004}
---- !u!54 &5494236714351354767
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2863630499189609999}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Size: {x: 0.0015382146, y: 0.02, z: 0.008}
+  m_Center: {x: -0.00023089164, y: 0.010000009, z: 0.004}
 --- !u!4 &6827131386386653856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4797199024299418569, guid: 5a8ef068b2ea459449fe16b8c778a510, type: 3}
