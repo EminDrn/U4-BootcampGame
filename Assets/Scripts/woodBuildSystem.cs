@@ -26,6 +26,7 @@ public class woodBuildSystem : MonoBehaviour
             wallArea.transform.GetChild(0).gameObject.SetActive(true);
             wallArea.transform.GetChild(0).transform.SetParent(null,true);
             wallArea.SetActive(false);
+            wallGameObject.SetActive(true); 
             
         }
 

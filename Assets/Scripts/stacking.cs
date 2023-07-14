@@ -6,7 +6,7 @@ using TMPro;
 
 public class stacking : MonoBehaviour
 {
-    public static int collectedWoodCount = 0;
+    public static int collectedWoodCount = 100;
     public static int collectedStoneCount = 0;
     public static int collectedMetalCount = 0;
     public int collectedArrowCount = 0;

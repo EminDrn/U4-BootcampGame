@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class DayNightCycle : MonoBehaviour
 {
-    private const int TIMESCALE = 36000;
+    private const int TIMESCALE = 3600;
     public static bool isBoosDay;
     public static int day, hour, minute;
     public static float second;
@@ -13,9 +13,10 @@ public class DayNightCycle : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI bossText;
     public Button createZombieButtton;
-    private bool isCountingTime = true;
-    private bool isButtonClicked = false;
-    private bool isZombieGenerated = false;
+    [SerializeField] private bool isCountingTime = true;
+    [SerializeField] private bool isButtonClicked = false;
+    [SerializeField] private bool isZombieGenerated = false;
+    [SerializeField] private bool cZButton = false;
     public GameObject zombiePrefab, bossZombiePrefab;
     private float countdownTimer = 10f;
     public int zombieCount;
@@ -35,11 +36,12 @@ public class DayNightCycle : MonoBehaviour
         
         if(isCountingTime)
         {
-            if(hour == 23 && minute == 58)
+            if(hour == 23 && minute == 59)
             {
                 
                 isCountingTime= false;
                 createZombieButtton.gameObject.SetActive(true);
+                cZButton = true;
                 Debug.Log(countdownTimer);
                 countdownTimer -= Time.deltaTime;
                 if(countdownTimer<=0f)
@@ -48,6 +50,7 @@ public class DayNightCycle : MonoBehaviour
                     {
                         CreateZombies();
                         isButtonClicked= false;
+                        cZButton = false;
                     }
                 }
                 
@@ -67,15 +70,27 @@ public class DayNightCycle : MonoBehaviour
                         isZombieGenerated = true;
                         createZombieButtton.gameObject.SetActive(false);
                         isButtonClicked= false;
+                        cZButton = false;
                     }
                 }
         }
+
+        /*if (zombieCount == 0 && !isCountingTime)
+        {
+            cZButton = false;
+            if (zombieCount == 0 && !cZButton)
+            {
+                Debug.Log("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+                minute += 1;
+                isCountingTime = true;
+            }
+        }*/
     }
 
     void TextCallFunction()
     {
-        dayText.text = " Day: "+ day ;
-        timeText.text = "Time: "+ (string.Format("{0:00}:{1:00}",hour,minute));
+        dayText.text = day.ToString() ;
+        timeText.text = (string.Format("{0:00}:{1:00}",hour,minute));
         if (isBoosDay== true)
         {
             bossText.text = " It's boss fight day!!!";
