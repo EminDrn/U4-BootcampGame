@@ -24,7 +24,8 @@ public class DayNightCycle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hour = 16;
+        hour = 08;
+        day = 1;
         dayText.text = " Day: "+ day;
         timeText.text = "Time: "+ (string.Format("{0:00}:{1:00}",hour,minute));
         createZombieButtton.onClick.AddListener(buttonClicked);
@@ -152,33 +153,29 @@ public class DayNightCycle : MonoBehaviour
     private void CreateZombies()
     {
         zombieFight = true;
-        if(day == 0)
+        if(day == 1)
         {
             zombieCount= 3;
         }
-        else if(day == 1)
-        {
-            zombieCount = 5;
-        }
         else if(day == 2)
         {
-            zombieCount = 8;
+            zombieCount = 5;
         }
         else if(day == 3)
         {
-            zombieCount = 10;
+            zombieCount = 8;
         }
         else if(day == 4)
         {
-            zombieCount = 12;
+            zombieCount = 10;
         }
         else if(day == 5)
         {
-            zombieCount = 15;
+            zombieCount = 12;
         }
         else if(day == 6)
         {
-            zombieCount = 5;
+            zombieCount = 15;
         }
         else if(day == 7)
         {
