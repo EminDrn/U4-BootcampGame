@@ -21,6 +21,8 @@ public class DayNightCycle : MonoBehaviour
     public float countdownTimer = 10f;
     public int zombieCount;
     public bool zombieFight = false;
+
+    [SerializeField] private Image[] greenHud;
     // Start is called before the first frame update
     void Start()
     {
@@ -145,6 +147,7 @@ public class DayNightCycle : MonoBehaviour
     if (hour >= 24)
     {
         day++;
+        greenHud[day-1].enabled = true;
         hour = 0;
     }
 

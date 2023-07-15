@@ -24,7 +24,7 @@ public class ControlEnemy : MonoBehaviour
     void Start()
     {
         zombieAnim = this.GetComponent<Animator>();
-        hedefOyuncu = GameObject.Find("Slow Run");
+        hedefOyuncu = GameObject.Find("AliCabbar");
         karakterAnim = hedefOyuncu.GetComponent<Animator>();
         zombieNavMesh =  this.GetComponent<NavMeshAgent>();
     }
@@ -32,6 +32,7 @@ public class ControlEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        mesafe =Vector3.Distance(this.transform.position, hedefOyuncu.transform.position);
         zombiHP= ZombieControl.HP; 
         Debug.Log(zombiHP);
         // Debug.Log(hedefOyuncu.HpDondur() +"-sddadasda----");
@@ -100,6 +101,9 @@ public class ControlEnemy : MonoBehaviour
                 }
                 
 
+            } else
+            {
+                zombieAnim.SetBool("isAttack", false);
             }
         }
     }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class CharacterControl : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -13,6 +13,9 @@ public class CharacterControl : MonoBehaviour
 
     bool isAlive;
     [SerializeField] FloatingHealthBar healthBar;
+
+    [SerializeField] Canvas slider;
+    [SerializeField] Transform cameraTarget;
     private void Awake() {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
     }
@@ -29,7 +32,8 @@ public class CharacterControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(HP<=0){
+        slider.transform.LookAt(cameraTarget);
+        if (HP<=0){
             isAlive = false;
             Anim.SetBool("isAlive", false );
         }else{

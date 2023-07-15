@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ZombieControl : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class ZombieControl : MonoBehaviour
     bool isAlive;
     [SerializeField] FloatingHealthBar healthBar;
     public GameObject Zombie;
+    
+    [SerializeField] Canvas sliderZombie;
+    [SerializeField] Transform cameraTarget;
 
     // private void Awake() {
     //     healthBar = GetComponentInChildren<FloatingHealthBar>();
@@ -30,6 +34,7 @@ public class ZombieControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        sliderZombie.transform.LookAt(cameraTarget);
         GameObject[] zombies = GameObject.FindGameObjectsWithTag("zombie");
         foreach(var zombi in zombies ){
         Anim = zombi.GetComponent<Animator>();
