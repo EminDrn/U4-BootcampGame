@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class DayNightCycle : MonoBehaviour
 {
-    private const int TIMESCALE = 3600;
+    private const int TIMESCALE = 930;
     public static bool isBoosDay;
     public static int day, hour, minute;
     public static float second;
@@ -13,7 +13,7 @@ public class DayNightCycle : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI bossText;
     public Button createZombieButtton;
-    [SerializeField] private bool isCountingTime = true;
+    [SerializeField] public static bool isCountingTime = true;
     [SerializeField] private bool isButtonClicked = false;
     [SerializeField] private bool isZombieGenerated = false;
     [SerializeField] private bool cZButton = false;
