@@ -12,7 +12,11 @@ public class stacking : MonoBehaviour
     public int collectedArrowCount = 0;
     public int collectedGoldCount = 0;
     public int deneme = 0;
-    public TextMeshProUGUI resourceText;
+    public TextMeshProUGUI resourceTextWood;
+    public TextMeshProUGUI resourceTextStone;
+    public TextMeshProUGUI resourceTextMetal;
+    public TextMeshProUGUI resourceTextGold;
+    public TextMeshProUGUI resourceTextArrow;
 
     //public AudioClip aroundTheWorld;
 
@@ -23,7 +27,7 @@ public class stacking : MonoBehaviour
         {
             collectedWoodCount++; // Odun sayısını artır
             Debug.Log("Odun toplandı! Toplam odun sayısı: " + collectedWoodCount);
-            resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+            resourceTextWood.text = " Wood: "+ collectedWoodCount;
             Destroy(other.gameObject);
 
         }
@@ -33,28 +37,28 @@ public class stacking : MonoBehaviour
             collectedStoneCount++; 
             Debug.Log("Tas toplandı! Toplam tas sayısı: " + collectedStoneCount);
             Destroy(other.gameObject);
-            resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+            resourceTextStone.text = " Stone: " + collectedStoneCount;
         }
         else if(other.CompareTag("metal_col"))
         {
             collectedMetalCount++; 
             Debug.Log("Metal toplandı! Toplam metal sayısı: " + collectedMetalCount);
             Destroy(other.gameObject);
-            resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+            resourceTextMetal.text = " Metal: "+collectedMetalCount;
         }
         else if(other.CompareTag("gold_col"))
         {
             collectedGoldCount++; 
             Debug.Log("Altın toplandı! Toplam altın sayısı: " + collectedGoldCount);
             Destroy(other.gameObject);
-            resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+            resourceTextGold.text = " Gold: " + collectedGoldCount;
         }
         else if(other.CompareTag("arrow"))
         {
             collectedArrowCount++; 
             Debug.Log("ok toplandı! Toplam ok sayısı: " + collectedArrowCount);
             Destroy(other.gameObject);
-            resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+            resourceTextArrow.text = " Arrow: "+collectedArrowCount;
         }
 
     }
@@ -68,10 +72,14 @@ public class stacking : MonoBehaviour
     }
     void Start()
     {
-        resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+        resourceTextWood.text = " Wood: " + collectedWoodCount;
+        resourceTextStone.text = " Stone: " + collectedStoneCount;
+        resourceTextMetal.text = " Metal: " + collectedMetalCount;
+        resourceTextGold.text = " Gold: " + collectedGoldCount;
+        resourceTextArrow.text = " Arrow: " + collectedArrowCount;
     }
     void Update()
     {
-        resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+        //resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
     }
 }

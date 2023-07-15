@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: wood_col
       objectReference: {fileID: 0}
+    - target: {fileID: 5671506048508015451, guid: ce3b44b038e5f4e8aaa09c685988c379, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671506048508015451, guid: ce3b44b038e5f4e8aaa09c685988c379, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6903037474707718440, guid: ce3b44b038e5f4e8aaa09c685988c379, type: 3}
       propertyPath: m_RootOrder
       value: 0
