@@ -16,6 +16,7 @@ TagManager:
   - stone_col
   - wood_col
   - arrow
+  - zombie
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Damage
   - 
   - 
   - 

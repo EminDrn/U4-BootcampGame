@@ -10,7 +10,7 @@ public class ZombieControl : MonoBehaviour
     [SerializeField]
     public static float HP =100;
     private float maxHp =100;
-    bool isAlive;
+    bool isAlive = true;
     [SerializeField] FloatingHealthBar healthBar;
     public GameObject Zombie;
     
@@ -46,9 +46,10 @@ public class ZombieControl : MonoBehaviour
             Anim.SetBool("isAlive", true );
 
         }
-        if(isAlive == false){
-            //oyun bitecek
-        }
+            if(isAlive == false)
+            {
+                Anim.Play("death");
+            }
         }
         
     }

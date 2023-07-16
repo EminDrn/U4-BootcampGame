@@ -27,7 +27,7 @@ public class stacking : MonoBehaviour
         {
             collectedWoodCount++; // Odun sayısını artır
             Debug.Log("Odun toplandı! Toplam odun sayısı: " + collectedWoodCount);
-            resourceTextWood.text = " Wood: "+ collectedWoodCount;
+            resourceTextWood.text = collectedWoodCount.ToString();
             Destroy(other.gameObject);
 
         }
@@ -37,28 +37,28 @@ public class stacking : MonoBehaviour
             collectedStoneCount++; 
             Debug.Log("Tas toplandı! Toplam tas sayısı: " + collectedStoneCount);
             Destroy(other.gameObject);
-            resourceTextStone.text = " Stone: " + collectedStoneCount;
+            resourceTextStone.text = collectedStoneCount.ToString();
         }
         else if(other.CompareTag("metal_col"))
         {
             collectedMetalCount++; 
             Debug.Log("Metal toplandı! Toplam metal sayısı: " + collectedMetalCount);
             Destroy(other.gameObject);
-            resourceTextMetal.text = " Metal: "+collectedMetalCount;
+            resourceTextMetal.text = collectedMetalCount.ToString();
         }
         else if(other.CompareTag("gold_col"))
         {
             collectedGoldCount++; 
             Debug.Log("Altın toplandı! Toplam altın sayısı: " + collectedGoldCount);
             Destroy(other.gameObject);
-            resourceTextGold.text = " Gold: " + collectedGoldCount;
+            resourceTextGold.text = collectedGoldCount.ToString();
         }
         else if(other.CompareTag("arrow"))
         {
             collectedArrowCount++; 
             Debug.Log("ok toplandı! Toplam ok sayısı: " + collectedArrowCount);
             Destroy(other.gameObject);
-            resourceTextArrow.text = " Arrow: "+collectedArrowCount;
+            resourceTextArrow.text = collectedArrowCount.ToString();
         }
 
     }
@@ -72,11 +72,11 @@ public class stacking : MonoBehaviour
     }
     void Start()
     {
-        resourceTextWood.text = " Wood: " + collectedWoodCount;
-        resourceTextStone.text = " Stone: " + collectedStoneCount;
-        resourceTextMetal.text = " Metal: " + collectedMetalCount;
-        resourceTextGold.text = " Gold: " + collectedGoldCount;
-        resourceTextArrow.text = " Arrow: " + collectedArrowCount;
+        resourceTextWood.text = collectedWoodCount.ToString();
+        resourceTextStone.text = collectedStoneCount.ToString();
+        resourceTextMetal.text = collectedMetalCount.ToString();
+        resourceTextGold.text = collectedGoldCount.ToString();
+        resourceTextArrow.text = collectedArrowCount.ToString();
     }
     void Update()
     {

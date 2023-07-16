@@ -11,11 +11,16 @@ public class CharacterControl : MonoBehaviour
     private float maxHp =100;
 
 
-    bool isAlive;
+    bool isAlive = true;
     [SerializeField] FloatingHealthBar healthBar;
 
     [SerializeField] Canvas slider;
     [SerializeField] Transform cameraTarget;
+
+    private CharacterMovement cM;
+    [SerializeField] private Collider cC2;
+
+    [SerializeField] private ZombieControl zC;
     private void Awake() {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
     }
@@ -23,9 +28,8 @@ public class CharacterControl : MonoBehaviour
     {
         Anim = this.GetComponent<Animator>();
         healthBar.UpdateHealthBar(HP, maxHp);
-        
-
-
+        cM = GetComponentInChildren<CharacterMovement>();
+        zC = GetComponent<ZombieControl>();
     }
 
 
@@ -40,18 +44,42 @@ public class CharacterControl : MonoBehaviour
             Anim.SetBool("isAlive", true );
 
         }
-        if(isAlive == false){
-            //oyun bitecek
+        if(isAlive == false)
+        {
+            gameObject.GetComponent<Collider>().enabled = false;
+            cC2.enabled = false;
+            cM.AliCabbarDeath();
+            Anim.Play("Death");
         }
         
     }
     public void HasarAl(){
         HP -= Random.Range(5,10);
         healthBar.UpdateHealthBar(HP, maxHp);
-        Debug.Log("11111111111");
+        //Debug.Log("11111111111");
     }
-    
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "zombie")
+        {
+            Anim.SetBool("isNearZombie", true);
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "zombie")
+        {
+            Anim.SetBool("isNearZombie", false);
+
+        }
+    }
+    public void ZombieDamage()
+    {
+        //zC.ZombiyeHasarVer();
+        Debug.Log("Zombi hasar aldý");
+    }
     
 
 }
