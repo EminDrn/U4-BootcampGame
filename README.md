@@ -136,7 +136,7 @@ olması gerektiği -Zombiler gece olduğunda ortaya çıkacaklar
 (yine daily scrumlarda oyun için oldukca fazla konuşuldu)
 -  **Sprint içinde tamamlanması tahmin edilen puan**:120
 -  **Puan tamamlama mantığı**:Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde son sprintin 120 puanla bitirilmesi hedeflendi
--  **Backlog Düzeni**:
+-  **Backlog Düzeni**:Oyunun hedeflenen kitleye ulaşmasını sağlamak için backloglar düzenlendi.
 -  **Daily Scrum**:
 -  **Sprint board update**:
 -  **Ürün Durumu**:
