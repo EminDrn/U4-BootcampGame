@@ -11771,6 +11771,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2851407336175886943, guid: 3be7627a053f2624d9412da75a850d67, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4777194846729983181, guid: 3be7627a053f2624d9412da75a850d67, type: 3}
       propertyPath: chAnim
       value: 

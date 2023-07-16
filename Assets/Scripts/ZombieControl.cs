@@ -24,6 +24,7 @@ public class ZombieControl : MonoBehaviour
     [SerializeField] private float zombieMaxHealth;
     [SerializeField] private Animator zombiAnim;
     [SerializeField] private bool _zombieDead = false;
+    [SerializeField] private bool addZF = false;
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +72,7 @@ public class ZombieControl : MonoBehaviour
         }
         if (zombieHealth <= 0)
         {
+            addZF = false;
             _zombieDead = true;
             zombiAnim.SetBool("isAlive", false);
         }
@@ -86,11 +88,25 @@ public class ZombieControl : MonoBehaviour
 
             StartCoroutine(Disappear());
         }
+
+        if (addZF)
+        {
+            rbZombie.AddForce(Vector3.forward * 100);
+        }
     }
 
     private void UpdateZombieHealthBar()
     {
         zombieSlider.value = zombieHealth / zombieMaxHealth;
+    }
+    public void ZombiyeHasarVer(){
+
+        addZF = true;
+        zombieHealth -= Random.Range(20,25);
+        UpdateZombieHealthBar();
+        rbZombie.AddForce(Vector3.forward * 2000);
+        StartCoroutine(AddForceZombie());
+        //-transform.forward * 100000
     }
 
     private IEnumerator Disappear()
@@ -106,16 +122,17 @@ public class ZombieControl : MonoBehaviour
         yield return new WaitForSeconds(2f);
         Destroy(this.gameObject);
     }
-    public void ZombiyeHasarVer(){       
-        zombieHealth -= Random.Range(20,25);
-        UpdateZombieHealthBar();
-        rbZombie.AddForce(-transform.forward * 100000);
-    }
 
     public void ZombieGiveDamage()
     {
         followTarget.GetComponent<CharacterControl>().HasarAl();
         Debug.Log("Can Azaldý");
+    }
+
+    private IEnumerator AddForceZombie()
+    {
+            yield return new WaitForSeconds(0.1f);
+            addZF = false;
     }
 
 }
