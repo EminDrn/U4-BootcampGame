@@ -134,8 +134,8 @@ olması gerektiği -Zombiler gece olduğunda ortaya çıkacaklar
 -Herkes üzerine düşen görevi saatinde ve gününde yapma yapamadığı halde takıma bildirmesi gerektiği konuşuldu tekrardan
 
 (yine daily scrumlarda oyun için oldukca fazla konuşuldu)
--  **Sprint içinde tamamlanması tahmin edilen puan**:
--  **Puan tamamlama mantığı**:
+-  **Sprint içinde tamamlanması tahmin edilen puan**:120
+-  **Puan tamamlama mantığı**:Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde son sprintin 120 puanla bitirilmesi hedeflendi
 -  **Backlog Düzeni**:
 -  **Daily Scrum**:
 -  **Sprint board update**:
