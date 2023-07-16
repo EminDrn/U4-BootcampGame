@@ -32,6 +32,7 @@ public class ControlEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ZombieDistance();
         mesafe =Vector3.Distance(this.transform.position, hedefOyuncu.transform.position);
         zombiHP= ZombieControl.HP; 
         Debug.Log(zombiHP);
@@ -43,7 +44,7 @@ public class ControlEnemy : MonoBehaviour
         if(zombiHP<0){
             zombiOlu = true;
             Destroy(GetComponent<CapsuleCollider>());
-            karakterAnim.SetBool("isNearZombie" , false);
+            //karakterAnim.SetBool("isNearZombie" , false);
 
         }
         if(zombiOlu == true){
@@ -51,7 +52,7 @@ public class ControlEnemy : MonoBehaviour
                 zombieAnim.SetBool("isAlive" , false);
                 zombieAnim.SetBool("isMoving" , false);
                 zombieAnim.SetBool("isAttack" , false);
-                karakterAnim.SetBool("isNearZombie" , false);
+                //karakterAnim.SetBool("isNearZombie" , false);
 
                 
         }else{
@@ -118,5 +119,10 @@ public class ControlEnemy : MonoBehaviour
     //     can = hedefOyuncu1.GetComponent<ZombieControl>.HpDondur();
     //     return can;
     // }
+
+    public float ZombieDistance()
+    {
+        return mesafe;
+    }
     
 }

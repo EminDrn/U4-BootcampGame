@@ -21,6 +21,10 @@ public class CharacterControl : MonoBehaviour
     [SerializeField] private Collider cC2;
 
     [SerializeField] private ZombieControl zC;
+
+    [SerializeField] private Animator damageAnimator;
+
+    [SerializeField] private Collider takeDamage;
     private void Awake() {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
     }
@@ -75,11 +79,15 @@ public class CharacterControl : MonoBehaviour
 
         }
     }
-    public void ZombieDamage()
+    public void ZombieDamageCol()
     {
-        //zC.ZombiyeHasarVer();
-        Debug.Log("Zombi hasar aldý");
+        takeDamage.enabled = true;
     }
-    
+
+    public void ZombieDamageColDeAc()
+    {
+        takeDamage.enabled = false;
+    }
+
 
 }

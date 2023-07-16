@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ZombieControl : MonoBehaviour
 {
 //    // Start is called before the first frame update
-    Animator Anim;
+    [SerializeField] Animator Anim;
     [SerializeField]
     public static float HP =100;
     private float maxHp =100;
@@ -22,7 +22,7 @@ public class ZombieControl : MonoBehaviour
     // }
     void Start()
     {
-        
+        Anim = GetComponent<Animator>();
         Zombie = GameObject.Find("Zombie Transition (1)");
     
         //Anim = Zombie.GetComponent<Animator>();
@@ -35,10 +35,10 @@ public class ZombieControl : MonoBehaviour
     void Update()
     {
         sliderZombie.transform.LookAt(cameraTarget);
-        GameObject[] zombies = GameObject.FindGameObjectsWithTag("zombie");
-        foreach(var zombi in zombies ){
-        Anim = zombi.GetComponent<Animator>();
-        Debug.Log(zombi.name + "  " + HP+ " ---");
+        //GameObject[] zombies = GameObject.FindGameObjectsWithTag("zombie");
+        //foreach(var zombi in zombies ){
+        //Anim = zombi.GetComponent<Animator>();
+        //Debug.Log(zombi.name + "  " + HP+ " ---");
         if(HP<=0){
             isAlive = false;
             Anim.SetBool("isAlive", false );
@@ -50,7 +50,7 @@ public class ZombieControl : MonoBehaviour
             {
                 Anim.Play("death");
             }
-        }
+        //}
         
     }
     public void ZombiyeHasarVer(){       

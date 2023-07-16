@@ -5,16 +5,40 @@ using UnityEngine;
 public class AxeDamage : MonoBehaviour
 {
     [SerializeField] LayerMask layermask;
+
+    private Touch touch;
+
+    [SerializeField] private Animator chAnim;
+    [SerializeField] private Animator takeDamageAnim;
+
+    private void Start()
+    {
+    }
+
     private void Update()
     {
-        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hitInfo, 20f, layermask))
+        //distance = cE.ZombieDistance();
+    }
+
+    private void OnDrawGizmos()
+    {
+        float maxDistance = 2.5f;
+        RaycastHit hit;
+
+        bool isHit = Physics.BoxCast(transform.position, transform.lossyScale / 2, transform.forward, out hit, transform.rotation, maxDistance, layermask);
+
+        if(isHit )
         {
-            Debug.Log("KalbimeGeldi");
-            Debug.DrawLine(transform.position, transform.TransformDirection(Vector3.forward) * hitInfo.distance, Color.red);
-        }else
-        {
-            Debug.Log("Kalbime Gelmedi");
-            Debug.DrawLine(transform.position, transform.TransformDirection(Vector3.forward) * 20f, Color.green);
+            chAnim.SetBool("isNearZombie", true);
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
         }
+        else
+        {
+            chAnim.SetBool("isNearZombie", false);
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(transform.position, transform.forward * maxDistance);
+        }
+
     }
 }
