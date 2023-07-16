@@ -73804,7 +73804,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1.1
-    functionName: HasarAl
+    functionName: ZombieGiveDamage
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
