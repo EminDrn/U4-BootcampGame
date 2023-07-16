@@ -123,7 +123,17 @@ Son sprint için yapılacaklar gözden geçirildi
 - **Sprint Retrospective:** Bazı sorunlar nedeniyle eksik kalan backloglar için  çözümler üretildi,  Ekip içi iletişimin iyi olmasına rağmen normal hayatta ki yoğunluktan dolayı katılamayanlar için 3. sprintte daha efor kaydetmeleri karar alındı.
 
 -  # Sprint 3
--   **Sprint Notları**:
+-   **Sprint Notları**:-Takım da ki herkesin zamanına göre görev dağılımı yapıldı ve görevler ikiye ayrıldı ilki 10' una kadar diğeri 3. sprint souna kadar -Bazı görevlerin oyunun bitimine yetişemeyeceği için çıkarılıp ekleme yapıldı
+
+-Yerden kaynak toplama ve toplanan kaynakların ekranda görmek için tasarım
+
+olması gerektiği -Zombiler gece olduğunda ortaya çıkacaklar
+
+-Tasarım düzenlemeleri yapılacak
+
+-Herkes üzerine düşen görevi saatinde ve gününde yapma yapamadığı halde takıma bildirmesi gerektiği konuşuldu tekrardan
+
+(yine daily scrumlarda oyun için oldukca fazla konuşuldu)
 -  **Sprint içinde tamamlanması tahmin edilen puan**:
 -  **Puan tamamlama mantığı**:
 -  **Backlog Düzeni**:
