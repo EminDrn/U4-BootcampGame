@@ -145,7 +145,8 @@ olması gerektiği -Zombiler gece olduğunda ortaya çıkacaklar
 -  ![Table_Photo](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/e06c9bbd-4add-492e-a722-914d9ecab15b)
 -  ![Weapon_Ws_Photo](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/6099df3d-e480-4e2b-9628-a016044d9008)
 -  
--  **Sprint Review**:
+-  **Sprint Review**:Ortaya oynanabilir bir oyun çıkarmak için son dokunuşlar yapılacak, oyunun videosu için ekranda titreme ve boss doğma animasyonuyla Boss yer altından çıkar ,tik tak sesiyle birlikte gün 7 - 23.59 a kadar gider. (Müzik susar),sahne geçiş efekti veya direkt geçişle sahne değişir, müzik ile uyumlu şekilde önce ağacı, taşı ve sonra arabayı kazarkenki kamera açıları girer kararı alınmıştır
+-  katılımcılar:Aytuğ Bengü,Fatma Beyza Çepni
 -  **Sprint Retrospective:**
 
 
