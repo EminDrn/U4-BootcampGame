@@ -15,5 +15,10 @@ public class TakeDamage : MonoBehaviour
         {
             other.GetComponent<ZombieControl>().ZombiyeHasarVer();
         }
+
+        if (other.tag == "Boss")
+        {
+            other.GetComponent<BossControl>().BossTakeDamage();
+        }
     }
 }

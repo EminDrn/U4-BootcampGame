@@ -17,6 +17,7 @@ TagManager:
   - wood_col
   - arrow
   - zombie
+  - Boss
   layers:
   - Default
   - TransparentFX
