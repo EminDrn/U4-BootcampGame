@@ -137,7 +137,7 @@ public class BossControl : MonoBehaviour
 
     public void ZombieGiveDamage()
     {
-        followTarget.GetComponent<CharacterControl>().HasarAl();
+        followTarget.GetComponent<CharacterControl>().BossGiveDamage();
         Debug.Log("Can Azaldý");
     }
 

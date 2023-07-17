@@ -74,6 +74,12 @@ public class CharacterControl : MonoBehaviour
         healthBar.UpdateHealthBar(HP, maxHp);
         //Debug.Log("11111111111");
     }
+
+    public void BossGiveDamage()
+    {
+        HP -= Random.Range(30, 40);
+        healthBar.UpdateHealthBar(HP, maxHp);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "zombie")

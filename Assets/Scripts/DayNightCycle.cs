@@ -27,7 +27,7 @@ public class DayNightCycle : MonoBehaviour
     void Start()
     {
         hour = 08;
-        day = 1;
+        day = 7;
         dayText.text = " Day: "+ day;
         timeText.text = "Time: "+ (string.Format("{0:00}:{1:00}",hour,minute));
         createZombieButtton.onClick.AddListener(buttonClicked);
