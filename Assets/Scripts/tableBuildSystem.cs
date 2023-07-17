@@ -13,6 +13,8 @@ public class tableBuildSystem : MonoBehaviour
     private bool isInsideCollider = false; 
     private float requiredTime = 2f;
 
+    [SerializeField] private Slider slider;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +22,13 @@ public class tableBuildSystem : MonoBehaviour
         {
             isInsideCollider = true;
             areaToBuy = this.gameObject;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (woodAmount >= 10)
+        {
+            slider.value = timeInsideCollider;
         }
     }
 
@@ -30,6 +39,7 @@ public class tableBuildSystem : MonoBehaviour
             isInsideCollider = false;
             timeInsideCollider = 0f;
             areaToBuy = null;
+            slider.value = 0f;
         }
     }
 
@@ -41,7 +51,8 @@ public class tableBuildSystem : MonoBehaviour
         {
             Debug.Log("if e girdi");
             stacking.decreaiseWood(cost);
-            tableArea.transform.GetChild(0).gameObject.SetActive(true);
+            tableGameObject.SetActive(true);
+            //tableArea.transform.GetChild(0).gameObject.SetActive(true);
             tableArea.transform.GetChild(0).transform.SetParent(null,true);
             tableArea.SetActive(false);
             

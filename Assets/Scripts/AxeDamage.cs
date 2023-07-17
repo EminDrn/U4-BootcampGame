@@ -32,6 +32,7 @@ public class AxeDamage : MonoBehaviour
             chAnim.SetBool("isNearZombie", true);
             Gizmos.color = Color.red;
             Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+            Gizmos.DrawWireCube(transform.position + transform.forward * hit.distance, transform.lossyScale);
         }
         else
         {

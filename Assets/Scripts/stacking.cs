@@ -7,7 +7,7 @@ using TMPro;
 public class stacking : MonoBehaviour
 {
     public static int collectedWoodCount = 100;
-    public static int collectedStoneCount = 0;
+    public static int collectedStoneCount = 30;
     public static int collectedMetalCount = 0;
     public int collectedArrowCount = 0;
     public int collectedGoldCount = 0;
@@ -65,6 +65,7 @@ public class stacking : MonoBehaviour
     public static void decreaiseWood(int cost)
     {
         collectedWoodCount-= cost;
+        //resourceTextWood.text = collectedWoodCount.ToString();
     }
     public static void decreaiseStone(int cost)
     {
@@ -80,6 +81,10 @@ public class stacking : MonoBehaviour
     }
     void Update()
     {
-        //resourceText.text = " Wood: "+ collectedWoodCount+ " Metal: "+collectedMetalCount+" Stone: "+collectedStoneCount+ " Gold: "+collectedGoldCount+ " Arrow: "+collectedArrowCount;
+        resourceTextWood.text = collectedWoodCount.ToString();
+        resourceTextStone.text = collectedStoneCount.ToString();
+        resourceTextMetal.text = collectedMetalCount.ToString();
+        resourceTextGold.text = collectedGoldCount.ToString();
+        resourceTextArrow.text = collectedArrowCount.ToString();
     }
 }

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class weaponWorkshopBuildSystem : MonoBehaviour
+public class arrowWorkshopBuild : MonoBehaviour
 
 {
     public GameObject weaponWorkshopGameObject, weaponWorkshopArea, areaToBuy;
-    public static int woodCost = 15;
-    public static int stoneCost = 15;
+    public static int woodCost = 10;
+    public static int stoneCost = 5;
     public int woodAmount;
     public int stoneAmount;
     private float timeInsideCollider = 0f;  // Zamanlayıcı
@@ -42,10 +42,7 @@ public class weaponWorkshopBuildSystem : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(woodAmount >=15 && stoneAmount >= 15)
-        {
-            slider.value = timeInsideCollider;
-        }
+        slider.value = timeInsideCollider;
     }
 
     private void OnTriggerExit(Collider other)
