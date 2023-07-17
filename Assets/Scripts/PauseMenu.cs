@@ -34,14 +34,14 @@ public class PauseMenu : MonoBehaviour
     public void Continue()
     {
         pauseMenuPanel.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
         isPause = false;pauseButton.SetActive(true);
     }
 
     public void Pause()
     {
         pauseMenuPanel.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0;
         isPause = true;
         pauseButton.SetActive(false);
     }
@@ -49,6 +49,6 @@ public class PauseMenu : MonoBehaviour
     public void BacktoMenu()
     {
         SceneManager.LoadScene(0);
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
     }
 }
