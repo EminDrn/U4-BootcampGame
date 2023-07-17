@@ -1,4 +1,4 @@
-# U4-BootcampGame
+[Sprint3_DailyScrums.pdf](https://github.com/EminDrn/U4-BootcampGame/files/12065630/Sprint3_DailyScrums.pdf)# U4-BootcampGame
 Oyun ve Uygulama Akademisi Bootcamp Unity U4 grup oyun projesi 
 # **Takım İsmi**
 
@@ -137,8 +137,8 @@ olması gerektiği -Zombiler gece olduğunda ortaya çıkacaklar
 -  **Sprint içinde tamamlanması tahmin edilen puan**:120
 -  **Puan tamamlama mantığı**:Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde son sprintin 120 puanla bitirilmesi hedeflendi
 -  **Backlog Düzeni**:Oyunun hedeflenen kitleye ulaşmasını sağlamak için backloglar düzenlendi.
--  **Daily Scrum**:
--  **Sprint board update**:
+-  **Daily Scrum**: [Sprint3_DailyScrums.pdf](https://github.com/EminDrn/U4-BootcampGame/files/12065632/Sprint3_DailyScrums.pdf)
+-  **Sprint board update**:![trello_sprint3](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/23fe5ffb-4ebc-44ae-958e-b3478e356fb8)
 -  **Ürün Durumu**:
 -  **Sprint Review**:
 -  **Sprint Retrospective:**
