@@ -147,7 +147,7 @@ olması gerektiği -Zombiler gece olduğunda ortaya çıkacaklar
 -  
 -  **Sprint Review**:Ortaya oynanabilir bir oyun çıkarmak için son dokunuşlar yapılacak, oyunun videosu için ekranda titreme ve boss doğma animasyonuyla Boss yer altından çıkar ,tik tak sesiyle birlikte gün 7 - 23.59 a kadar gider. (Müzik susar),sahne geçiş efekti veya direkt geçişle sahne değişir, müzik ile uyumlu şekilde önce ağacı, taşı ve sonra arabayı kazarkenki kamera açıları girer kararı alınmıştır
 -  katılımcılar:Aytuğ Bengü,Fatma Beyza Çepni
--  **Sprint Retrospective:**
+-  **Sprint Retrospective**: Bir önceki sprintlerden kalanlar ve belirlenen hedeflerin yerine getirilen sprint oldu. oyun tanıtım videosu için Aytuğ Bengü çalışmalar yaptı. Ürün belgesinde oyunumuzun son haline göre değişikler yapıldı. Önceki, sprintlerde olduğu gibi toplantı notları ve backlog puanları miroya eklendi.
 
 
 
