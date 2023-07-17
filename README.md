@@ -1,4 +1,3 @@
-[Sprint3_DailyScrums.pdf](https://github.com/EminDrn/U4-BootcampGame/files/12065630/Sprint3_DailyScrums.pdf)# U4-BootcampGame
 Oyun ve Uygulama Akademisi Bootcamp Unity U4 grup oyun projesi 
 # **Takım İsmi**
 
@@ -139,7 +138,13 @@ olması gerektiği -Zombiler gece olduğunda ortaya çıkacaklar
 -  **Backlog Düzeni**:Oyunun hedeflenen kitleye ulaşmasını sağlamak için backloglar düzenlendi.
 -  **Daily Scrum**: [Sprint3_DailyScrums.pdf](https://github.com/EminDrn/U4-BootcampGame/files/12065632/Sprint3_DailyScrums.pdf)
 -  **Sprint board update**:![trello_sprint3](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/23fe5ffb-4ebc-44ae-958e-b3478e356fb8)
--  **Ürün Durumu**:
+-  **Ürün Durumu**:![sprint_3](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/9879015e-47e0-4bcb-8163-78cc2fc882f0)
+-  ![sprint3_3](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/047f7c8d-23d0-4a5e-8a1e-1214572b36be)
+-  ![sprint3_4](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/28247295-6784-433d-a98b-5c48f4ed80bf)
+-  ![ArrowTable_Photo](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/2bd109d7-e721-4c89-9fbf-189facd47264)
+-  ![Table_Photo](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/e06c9bbd-4add-492e-a722-914d9ecab15b)
+-  ![Weapon_Ws_Photo](https://github.com/EminDrn/U4-BootcampGame/assets/113312210/6099df3d-e480-4e2b-9628-a016044d9008)
+-  
 -  **Sprint Review**:
 -  **Sprint Retrospective:**
 
