@@ -555,7 +555,7 @@ RectTransform:
   m_GameObject: {fileID: 2851407335118959199}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.1}
+  m_LocalScale: {x: -0.01, y: -0.01, z: -0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2851407335977483723}
@@ -1144,6 +1144,8 @@ GameObject:
   - component: {fileID: 2851407336175886937}
   - component: {fileID: 2851407336175886936}
   - component: {fileID: 2851407336175886943}
+  - component: {fileID: 7340369013962499038}
+  - component: {fileID: 5544302854233326969}
   - component: {fileID: 2851407336175886942}
   - component: {fileID: 2851407336175886941}
   - component: {fileID: 2851407336175886940}
@@ -1171,7 +1173,7 @@ Transform:
   - {fileID: 2851407335526641272}
   - {fileID: 2851407335118959192}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2851407336175886936
 Animator:
@@ -1201,7 +1203,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2851407336175886915}
   serializedVersion: 4
-  m_Mass: 25
+  m_Mass: 1
   m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1220,6 +1222,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!65 &7340369013962499038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851407336175886915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.394593, z: 0.40114713}
+  m_Center: {x: 0, y: 0.69866157, z: 0.016247869}
+--- !u!65 &5544302854233326969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851407336175886915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.394593, z: 0.40114713}
+  m_Center: {x: 0, y: 0.69866157, z: 0.016247869}
 --- !u!136 &2851407336175886942
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1237,7 +1281,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.24366963
   m_Height: 1.3990872
@@ -1303,6 +1347,9 @@ MonoBehaviour:
   zombieMaxHealth: 100
   zombiAnim: {fileID: 2851407336175886936}
   _zombieDead: 0
+  addZF: 0
+  eventSysObj: {fileID: 0}
+  eventSysZC: {fileID: 0}
 --- !u!1 &2851407336311794394
 GameObject:
   m_ObjectHideFlags: 0

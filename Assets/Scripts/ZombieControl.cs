@@ -26,14 +26,23 @@ public class ZombieControl : MonoBehaviour
     [SerializeField] private bool _zombieDead = false;
     [SerializeField] private bool addZF = false;
 
+    [SerializeField] private GameObject eventSysObj;
+    [SerializeField] private DayNightCycle eventSysZC;
+
     // Start is called before the first frame update
     void Start()
     {
         followTarget = GameObject.Find("AliCabbar");
         chAnim = followTarget.GetComponent<Animator>();
+
         cameraObj = GameObject.Find("Main Camera");
         cameraTarget = cameraObj.GetComponent<Transform>();
+
         _agent = GetComponent<NavMeshAgent>();
+
+        eventSysObj = GameObject.Find("EventSystem");
+        eventSysZC = eventSysObj.GetComponent<DayNightCycle>();
+        
     }
 
     // Update is called once per frame
@@ -104,7 +113,7 @@ public class ZombieControl : MonoBehaviour
         addZF = true;
         zombieHealth -= Random.Range(20,25);
         UpdateZombieHealthBar();
-        rbZombie.AddForce(Vector3.forward * 2000);
+        rbZombie.AddForce(-transform.forward * 1000);
         StartCoroutine(AddForceZombie());
         //-transform.forward * 100000
     }
@@ -121,6 +130,7 @@ public class ZombieControl : MonoBehaviour
         this.gameObject.transform.position = Vector3.Lerp(a, b, t);
         yield return new WaitForSeconds(2f);
         Destroy(this.gameObject);
+        eventSysZC.ZombieCountLess(); // zombie count floatý -1 azalýr
     }
 
     public void ZombieGiveDamage()

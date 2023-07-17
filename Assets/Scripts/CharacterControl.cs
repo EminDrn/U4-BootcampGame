@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 public class CharacterControl : MonoBehaviour
@@ -9,6 +10,8 @@ public class CharacterControl : MonoBehaviour
     [SerializeField]
     private float HP =100;
     private float maxHp =100;
+
+    private bool hpAdded = true;
 
 
     bool isAlive = true;
@@ -55,6 +58,15 @@ public class CharacterControl : MonoBehaviour
             cM.AliCabbarDeath();
             Anim.Play("Death");
         }
+
+        if (HP < 100 && hpAdded)
+        {
+            hpAdded = false;
+            Invoke("AddHealth", 10f);
+        } else if (HP > 100){
+            HP = 100;
+        }
+
         
     }
     public void HasarAl(){
@@ -89,5 +101,12 @@ public class CharacterControl : MonoBehaviour
         takeDamage.enabled = false;
     }
 
+    private void AddHealth ()
+    {
+        HP += 50f;
+        healthBar.UpdateHealthBar(HP, maxHp);
+        Debug.Log("Can eklendi");
+        hpAdded = true;
+    }
 
 }

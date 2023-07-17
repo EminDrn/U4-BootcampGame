@@ -27,7 +27,7 @@ public class AxeDamage : MonoBehaviour
 
         bool isHit = Physics.BoxCast(transform.position, transform.lossyScale / 2, transform.forward, out hit, transform.rotation, maxDistance, layermask);
 
-        if(isHit )
+        if(isHit)
         {
             chAnim.SetBool("isNearZombie", true);
             Gizmos.color = Color.red;

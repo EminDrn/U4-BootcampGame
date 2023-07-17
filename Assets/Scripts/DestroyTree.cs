@@ -47,6 +47,7 @@ private void OnTriggerStay(Collider other)
         }
             if (currentIndex == 4)
             {
+                // 20saniye sonra ağaç oluştur
                 Destroy(gameObject);
             }
 

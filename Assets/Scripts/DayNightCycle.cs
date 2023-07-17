@@ -101,6 +101,10 @@ public class DayNightCycle : MonoBehaviour
                 isCountingTime = true;
             }
         }*/
+        if(zombieCount < 0)
+        {
+            zombieCount = 0;
+        }
     }
 
     void TextCallFunction()
@@ -223,5 +227,10 @@ public class DayNightCycle : MonoBehaviour
         zombieCount -= 1;
         GameObject zombieClone = GameObject.Find("El(Clone)");
         Destroy(zombieClone);
+    }
+
+    public void ZombieCountLess()
+    {
+        zombieCount -= 1;
     }
 }
