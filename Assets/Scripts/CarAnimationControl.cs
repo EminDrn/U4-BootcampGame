@@ -10,6 +10,9 @@ public class CarAnimationControl : MonoBehaviour
     private Touch _touch;
     private float timer = 0f; // Zamanlayıcı
     public bool isNearCharacter = false;
+
+    [SerializeField] private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +51,9 @@ public class CarAnimationControl : MonoBehaviour
                 {
                     // Animasyonu başlat
                     GetComponent<Animator>().SetBool("isNearCar", true);
-                    
+                        
+                    Invoke("IsNearTreeFalse", 2.0f);
+
                 }
                 else if(timer >= endWaitTime)
                 {
@@ -61,5 +66,9 @@ public class CarAnimationControl : MonoBehaviour
             
            
         }
+    }
+    public void IsNearTreeFalse()
+    {
+        anim.SetBool("isNearCar", false);
     }
 }

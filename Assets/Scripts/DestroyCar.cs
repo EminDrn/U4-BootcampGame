@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class DestroyCar : MonoBehaviour
 {
-   public GameObject[] arabaBolumleri;
-public float waitTime = 1.5f;
-private int currentIndex = 0;
-private float timer = 0f;
+    public GameObject[] arabaBolumleri;
+    public float waitTime = 1.5f;
+    private int currentIndex = 0;
+    private float timer = 0f;
 
-// Start is called before the first frame update
-void Start()
+    [SerializeField] private ParticleSystem[] par_Car;
+    [SerializeField] private GameObject carCol;
+    [SerializeField] private Transform spawnPos;
+
+    // Start is called before the first frame update
+    void Start()
 {
     
 }
@@ -45,18 +49,30 @@ private void OnTriggerStay(Collider other)
                 if(currentIndex == 0 ){
                 currentIndex++;
                 timer = 0f;
+
                 }    
                 else if(currentIndex > 0  && currentIndex <6){
                     arabaBolumleri[currentIndex -1 ].SetActive(false);
                     arabaBolumleri[currentIndex].SetActive(true);
                     currentIndex++;
                     timer = 0f;             
+                    par_Car[0].Play();
+                    par_Car[1].Play();
+                    par_Car[2].Play();
+                    par_Car[3].Play();
+                    Instantiate(carCol, spawnPos.position, Quaternion.identity);
 
                 }
                             
             }
         }
-    }
+
+            if (currentIndex == 6)
+            {
+                Destroy(gameObject);
+            }
+
+        }
 }
 }
 

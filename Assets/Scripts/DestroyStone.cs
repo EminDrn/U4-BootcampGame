@@ -8,6 +8,10 @@ public class DestroyStone : MonoBehaviour
     public float waitTime = 1.5f;
     private int currentIndex = 0;
     private float timer = 0f;
+
+    [SerializeField] private ParticleSystem[] par_Stone;
+    [SerializeField] private GameObject stoneCol;
+    [SerializeField] private Transform spawnPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +45,19 @@ private void OnTriggerStay(Collider other)
             timer += Time.deltaTime;
             if(timer>=waitTime && currentIndex < kayaBolumleri.Length ){
                 Destroy(kayaBolumleri[currentIndex]);
+                par_Stone[0].Play();
+                Instantiate(stoneCol, spawnPos.position, Quaternion.identity);
                 currentIndex++;
                 timer = 0f;
+                    Debug.Log(currentIndex);
                             
             }
         }
 
-    }
+            if (currentIndex == 4)
+            {
+                Destroy(gameObject);
+            }
+        }
 }
 }

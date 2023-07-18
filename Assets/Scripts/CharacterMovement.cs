@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed;
-    [SerializeField] private float rotationSpeed = 500;
+    [SerializeField] public float movementSpeed;
+    [SerializeField] public float rotationSpeed = 500;
     private Touch _touch;
     private Vector3 _touchUp;
     private Vector3 _touchDown;
@@ -56,5 +56,11 @@ public class CharacterMovement : MonoBehaviour
         temp.z = temp.y;
         temp.y = 0;
         return temp;
+    }
+
+    public void AliCabbarDeath()
+    {
+        movementSpeed = 0;
+        rotationSpeed = 0;
     }
 }

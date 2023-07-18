@@ -18,5 +18,7 @@ public class CameraFollow : MonoBehaviour
     private void LateUpdate()
     {
         transform.position=Vector3.Lerp(transform.position,target.position+offset,chaseSpeed*Time.deltaTime);
+        Vector3 newRotation = new Vector3(50,0,0);
+        transform.eulerAngles = newRotation;
     }
 }
