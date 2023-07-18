@@ -42,7 +42,6 @@ public class BossControl : MonoBehaviour
 
         eventSysObj = GameObject.Find("EventSystem");
         eventSysZC = eventSysObj.GetComponent<DayNightCycle>();
-
     }
 
     // Update is called once per frame
@@ -146,5 +145,14 @@ public class BossControl : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         addZF = false;
+    }
+
+    public void BossSpeed()
+    {
+        _bossAgent.speed = 0f;
+    }
+    public void BossSpeedNormal()
+    {
+        _bossAgent.speed = 1f;
     }
 }

@@ -145,4 +145,13 @@ public class ZombieControl : MonoBehaviour
             addZF = false;
     }
 
+    public void ZombieSpeed()
+    {
+        _agent.speed = 0f;
+    }
+    public void ZombieSpeedNormal()
+    {
+        _agent.speed = 0.1f;
+    }
+
 }

@@ -22,12 +22,16 @@ public class DayNightCycle : MonoBehaviour
     public int zombieCount;
     public bool zombieFight = false;
 
+    [SerializeField] private Transform bossSpawn;
+
+    [SerializeField] private Animator cutsceneAnim;
+
     [SerializeField] private Image[] greenHud;
     // Start is called before the first frame update
     void Start()
     {
         hour = 08;
-        day = 7;
+        day = 1;
         dayText.text = " Day: "+ day;
         timeText.text = "Time: "+ (string.Format("{0:00}:{1:00}",hour,minute));
         createZombieButtton.onClick.AddListener(buttonClicked);
@@ -186,7 +190,7 @@ public class DayNightCycle : MonoBehaviour
         }
         else if(day == 7)
         {
-            zombieCount = 15;
+            zombieCount = 3;
         }
         for(int a = 0; a < zombieCount; a++)
         {
@@ -195,6 +199,7 @@ public class DayNightCycle : MonoBehaviour
         if(isBoosDay)
         {
             createBoss();
+            CutSceneStart();
         }
         isZombieGenerated = true;
     }
@@ -214,12 +219,13 @@ public class DayNightCycle : MonoBehaviour
     private Vector3 GetRandomPosition()
     {
         float randomX = Random.Range(-10f, 10f);
-        float randomZ = Random.Range(-10f, 10f);
-        return new Vector3(randomX, 0f, 0f);
+        float randomZ = 11f;//Random.Range(-10f, 10f);
+        return new Vector3(randomX, 0f, randomZ);
     }
+
     private void createBoss()
     {
-        Instantiate(bossZombiePrefab, GetRandomPosition(), Quaternion.identity);
+        Instantiate(bossZombiePrefab, bossSpawn.transform.position, Quaternion.Euler(new Vector3(0f,180f,0f)));
     }
 
     public void ZombieDed()
@@ -232,5 +238,10 @@ public class DayNightCycle : MonoBehaviour
     public void ZombieCountLess()
     {
         zombieCount -= 1;
+    }
+
+    public void CutSceneStart()
+    {
+        cutsceneAnim.Play("CutScene");
     }
 }
